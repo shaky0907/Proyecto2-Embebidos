@@ -27,9 +27,9 @@ int main()
 
     int32_t buffer;
     
-
+    buffer = 0x18;
     for (int i=0; i<255; i++){
-        buffer = 0x18;
+        
         ioctl(fd, RD_VALUE, (int32_t*) &buffer);
         printf("Read test_register: 0x%x\n", buffer);
 
