@@ -25,20 +25,25 @@ int main()
     }
     printf("*********************************\n");
 
-    int32_t buffer;
+    int32_t buffer, buffer_i;
     
-    buffer = 0x18;
+    buffer_i = 0x18;
     for (int i=0; i<255; i++){
-        
+
+        buffer = buffer_i;
         ioctl(fd, RD_VALUE, (int32_t*) &buffer);
         //printf("Read test_register: 0x%x\n", buffer);
-
+            
         int8_t buffer_corrected = buffer;
 
         printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
-        buffer += 0x1;
+        buffer_i += 0x1;
     }
+
+
     
+
+
     //int32_t value = 0xCAFECAFE;
     //ioctl(fd, WR_VALUE, (int32_t *) &value);
     //printf("Write test_register succesfully done\n");
