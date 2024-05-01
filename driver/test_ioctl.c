@@ -31,7 +31,7 @@ int main()
     for (int i=0; i<255; i++){
         
         ioctl(fd, RD_VALUE, (int32_t*) &buffer);
-        printf("Read test_register: 0x%x\n", buffer);
+        //printf("Read test_register: 0x%x\n", buffer);
 
         int8_t buffer_corrected = buffer;
 
