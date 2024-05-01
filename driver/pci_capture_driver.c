@@ -88,7 +88,7 @@ static struct file_operations pci_capture_chr_dev_registration = {
 /***************************************************************************************************************/
 // here you can add whatever function you need
 // for example
-uint32_t read_test_register(void);
+uint32_t read_test_register(uint32_t dir);
 void write_test_register(uint32_t value);
 /***************************************************************************************************************/
 /* Global variables */
