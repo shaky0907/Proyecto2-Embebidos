@@ -1,0 +1,4 @@
+project: /home/david/Documents/Empotrados/Proyecto2-Embebidos
+simics-root: /home/david/SIMICS/simics-6.0.185
+simics-model-builder: /home/david/SIMICS/simics-6.0.185
+mingw: None
