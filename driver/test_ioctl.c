@@ -26,12 +26,13 @@ int main()
     printf("*********************************\n");
 
     int32_t buffer;
+    buffer = 0x18;
     ioctl(fd, RD_VALUE, (int32_t*) &buffer);
     printf("Read test_register: 0x%x\n", buffer);
 
-    int32_t value = 0xCAFECAFE;
-    ioctl(fd, WR_VALUE, (int32_t *) &value);
-    printf("Write test_register succesfully done\n");
+    //int32_t value = 0xCAFECAFE;
+    //ioctl(fd, WR_VALUE, (int32_t *) &value);
+    //printf("Write test_register succesfully done\n");
 
     printf("*********************************\n");
     printf(" >>> Closing character device\n");

@@ -367,7 +367,9 @@ static long ioctl_pci_capture_chr_dev(struct file *file, unsigned int cmd, unsig
             break;
 
         case RD_VALUE:
-            buffer = read_test_register();
+            error = copy_from_user(&buffer, (int32_t *) arg, sizeof(buffer));
+            uint32_t dir = buffer;
+            buffer = read_test_register(dir);
             error = copy_to_user((int32_t *) arg, &buffer, sizeof(buffer));
             if (error != 0) {
                 printk(KERN_ERR "IOCTL failed while sending data to user. Error: %d\n", error);
@@ -390,13 +392,13 @@ static int uevent_pci_capture_chr_dev(struct device *dev, struct kobj_uevent_env
 /***************************************************************************************************************/
 /* Internal/Private functions definition */
 /***************************************************************************************************************/
-uint32_t read_test_register(void) {
+uint32_t read_test_register(uint32_t dir) {
     uint32_t ret;
     struct pci_driver_internal_data *pci_capture_data;
     uint32_t test_register_offset;
 
     pci_capture_data = (struct pci_driver_internal_data *) pci_get_drvdata(pci_dev);
-    test_register_offset = 0x0;
+    test_register_offset = dir;
     ret = ioread32(pci_capture_data->hwmem + test_register_offset);
 
     return ret;
