@@ -1,0 +1,24 @@
+#Compilar todo
+make
+cd driver
+make
+
+#correr simics
+./simics driver-target.simics
+
+#dentro de simics
+start-agent-manager
+run
+agent_manager.connect-to-agent
+matic0.upload from = driver/Makefile to = /home/simics
+matic0.upload from = driver/pci_capture_driver.c to = /home/simics
+matic0.upload from = driver/test_ioctl.c to = /home/simics
+
+#dentro de la consola simulada
+make
+sudo insmod pci_capture_module.ko
+
+//revisar que si se instalo bien
+lspci -vnd:ac10
+
+gcc -o test test_ioctl.c

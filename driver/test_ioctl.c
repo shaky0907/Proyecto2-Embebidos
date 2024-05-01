@@ -37,7 +37,7 @@ int main()
         int8_t buffer_corrected = buffer;
 
         printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
-        buffer_i += 0x1;
+        buffer_i += 0x4;
     }
 
 
