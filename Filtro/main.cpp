@@ -2,7 +2,16 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
 
+#define CHARACTER_DEVICE_DRIVER_PATH "/dev/pci_capture_chr_dev-0"
+#define WR_VALUE _IOW('a','a',int32_t *)
+#define RD_VALUE _IOR('b','b',int32_t *)
 #pragma pack(2) // Asegura que no haya relleno entre los campos de la estructura
 
 // Estructura para el encabezado de un archivo BMP
@@ -98,13 +107,53 @@ void blur_conversion(unsigned char *data, BMPHeader header, BMPInfoHeader infoHe
 }
 
 int main() {
+    
+    int fd;
+    const char *chr_dev_name = CHARACTER_DEVICE_DRIVER_PATH;
+
+    printf("*********************************\n");
+    printf(">>> Opening character device\n");
+    fd = open(chr_dev_name, O_RDWR);
+    if (fd < 0) {
+        printf("Cannot open character device file...\n");
+        return 0;
+    }
+    printf("*********************************\n");
+
+    int32_t buffer, buffer_i;
+    int32_t size_file = 5000000; 
+
+    buffer_i = 0x18;
+    char file[size_file];
+
+    for (int i=0; i<size_file; i++){
+
+        buffer = buffer_i;
+        ioctl(fd, RD_VALUE, (int32_t*) &buffer);
+            
+        int8_t buffer_corrected = buffer;
+	    char buffer_char = buffer_corrected;
+
+        file[i] = buffer_char;
+
+        //printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
+        buffer_i += 0x1;
+    }
+
+    printf("*********************************\n");
+    printf(" >>> Closing character device\n");
+    printf("*********************************\n");
+    close(fd);
+
     //Abrir el archivo
+    /* 
     char filename[] = "/Users/marcelotruquemontero/CLionProjects/untitled3/goku.bmp";
     FILE *file = fopen(filename, "rb");
     if (!file) {
         printf("No se pudo abrir el archivo %s\n", filename);
         return 1;
     }
+    */
 
     //Obtener información archivo (Esta parte eventualmente viene del PCI)
     BMPHeader header;
