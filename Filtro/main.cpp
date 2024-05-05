@@ -157,6 +157,10 @@ int main() {
     buffer_i = 0x18;
     unsigned char * file=(unsigned char *) malloc(size_file);
 
+
+
+    //ioctl(fd, WR_VALUE, 0x1);
+
     for (int i=0; i<size_file; i++){
 
         buffer = buffer_i;
