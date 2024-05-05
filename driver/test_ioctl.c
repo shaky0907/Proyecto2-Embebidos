@@ -26,21 +26,27 @@ int main()
     printf("*********************************\n");
 
     int32_t buffer, buffer_i;
-    
+    int32_t size_file = 5000000; 
+
     buffer_i = 0x18;
-    for (int i=0; i<255; i++){
+    char final_buffer[size_file];
+
+    for (int i=0; i<size_file; i++){
 
         buffer = buffer_i;
         ioctl(fd, RD_VALUE, (int32_t*) &buffer);
         //printf("Read test_register: 0x%x\n", buffer);
             
         int8_t buffer_corrected = buffer;
+	    char buffer_char = buffer_corrected;
 
-        printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
+        final_buffer[i] = buffer_char;
+
+        //printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
         buffer_i += 0x4;
     }
 
-
+    
     
 
 

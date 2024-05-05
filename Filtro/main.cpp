@@ -2,7 +2,16 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
 
+#define CHARACTER_DEVICE_DRIVER_PATH "/dev/pci_capture_chr_dev-0"
+#define WR_VALUE _IOW('a','a',int32_t *)
+#define RD_VALUE _IOR('b','b',int32_t *)
 #pragma pack(2) // Asegura que no haya relleno entre los campos de la estructura
 
 // Estructura para el encabezado de un archivo BMP
@@ -97,27 +106,88 @@ void blur_conversion(unsigned char *data, BMPHeader header, BMPInfoHeader infoHe
     free(newdata);
 }
 
+void readheaders(BMPHeader* header, BMPInfoHeader* infoHeader, unsigned char * file){
+    header->type=*((unsigned short *)&file[0]);
+    header->size=*((unsigned int *)&file[2]);
+    header->reserved1=*((unsigned short *)&file[6]);
+    header->reserved2=*((unsigned short *)&file[8]);
+    header->offset=*((unsigned int *)&file[10]);
+    infoHeader->size=*((unsigned int *)&file[14]);
+    infoHeader->width=*((int *)&file[18]);
+    infoHeader->height=*((int *)&file[22]);
+    infoHeader->planes=*((unsigned short*)&file[26]);
+    infoHeader->bitCount=*((unsigned short*)&file[28]);
+    infoHeader->compression=*((unsigned int *)&file[30]);
+    infoHeader->imageSize=*((unsigned int *)&file[34]);
+    infoHeader->xPixelsPerMeter=*((int *)&file[38]);
+    infoHeader->yPixelsPerMeter=*((int *)&file[42]);
+    infoHeader->colorsUsed=*((unsigned int *)&file[46]);
+    infoHeader->colorsImportant=*((unsigned int *)&file[50]);
+}
+
+void readdata(unsigned char * data, unsigned char * file,int imageSize){
+    int cursor=54;
+    int amountdataread=0;
+    while(true){
+        data[amountdataread]=file[cursor];
+        if(amountdataread==imageSize){
+            break;
+        }
+        cursor++;
+        amountdataread++;
+    }
+}
+
 int main() {
-    //Abrir el archivo
-    char filename[] = "/Users/marcelotruquemontero/CLionProjects/untitled3/goku.bmp";
-    FILE *file = fopen(filename, "rb");
-    if (!file) {
-        printf("No se pudo abrir el archivo %s\n", filename);
-        return 1;
+    int fd;
+    const char *chr_dev_name = CHARACTER_DEVICE_DRIVER_PATH;
+
+    printf("*********************************\n");
+    printf(">>> Opening character device\n");
+    fd = open(chr_dev_name, O_RDWR);
+    if (fd < 0) {
+        printf("Cannot open character device file...\n");
+        return 0;
+    }
+    printf("*********************************\n");
+
+    int32_t buffer, buffer_i;
+    int32_t size_file = 5000000; 
+
+    buffer_i = 0x18;
+    unsigned char * file=(unsigned char *) malloc(size_file);
+
+    for (int i=0; i<size_file; i++){
+
+        buffer = buffer_i;
+        ioctl(fd, RD_VALUE, (int32_t*) &buffer);
+            
+        int8_t buffer_corrected = buffer;
+	    char buffer_char = buffer_corrected;
+
+        file[i] = buffer_char;
+
+        //printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
+        buffer_i += 0x1;
     }
 
-    //Obtener información archivo (Esta parte eventualmente viene del PCI)
+    printf("*********************************\n");
+    printf(" >>> Closing character device\n");
+    printf("*********************************\n");
+    close(fd);
+
+
+    //Obtengo la información o headers de los archivos
     BMPHeader header;
-    fread(&header, sizeof(BMPHeader), 1, file);
-
     BMPInfoHeader infoHeader;
-    fread(&infoHeader, sizeof(BMPInfoHeader), 1, file);
+    //Selecciona de la cadena los caracteres que son específicamente los headers, es más que nada una asignación
+    readheaders(&header,&infoHeader,file);
 
+    //Ya sabiendo el tamaño de la imagen se reserva la memoria de los pixeles RGB
     unsigned char *data = (unsigned char *)malloc(infoHeader.imageSize);
-    fread(data, 1, infoHeader.imageSize, file);
+    //Se lee cada pixel RGB de la imagen
+    readdata(data,file,infoHeader.imageSize);
 
-    //Cerrar el archivo
-    fclose(file);
 
     //Filtro del archivo a negativo
     negative_conversion(data,header,infoHeader);
@@ -126,6 +196,7 @@ int main() {
     blur_conversion(data,header,infoHeader);
 
     free(data);
+    free(file);
 
     return 0;
 }
