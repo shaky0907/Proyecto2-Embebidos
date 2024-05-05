@@ -1,0 +1,186 @@
+/*
+  © 2016 Intel Corporation
+*/
+
+// This is a DML device module to show an example on how to perform reads/write
+// to a memory_space
+
+dml 1.4;
+
+device ic_device;
+
+param desc = "IC device";
+
+param documentation =
+    "Image capture device. This device captures image and saves it to memory.";
+
+import "utility.dml";
+import "simics/devs/memory-space.dml";
+
+param byte_order = "big-endian";
+
+// Memory-space connection for DMA work
+connect target_mem_space {
+    param documentation =
+        "The memory space on which the DMA engine operates. Data will be "
+        + "read from and copied to the memory associated with this memory "
+        + "space.";
+    param configuration = "required";
+    interface memory_space;
+}
+
+//Variables
+param BUFFER_SIZE = 256;
+//this header statement imports header libraries from C directly
+header %{
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+%}
+
+//extern statements for the usage of this library function calls of the imports defined above
+extern FILE * fopen(const char *, const char *);
+extern int fgetc(FILE *);
+extern int fclose(FILE *);
+extern typedef struct { } FILE;
+extern int fseek(FILE *, uint64, int);
+extern uint64 ftell(FILE *);
+extern size_t fread(void *, size_t, size_t, FILE *);
+
+
+//variable with the file handle
+session FILE * file;
+
+attribute input {
+    param type = "s";
+    session char* val;
+    session int len;
+    //get handler, gets called with called from CLI or the get interface
+    method get() -> (attr_value_t) default {
+        return SIM_make_attr_string(val != NULL ? val : "");
+      
+    }
+    //set handler, gets called with called from CLI or the set interface
+    method set(attr_value_t attr) throws default {
+        local const char* attr_str = SIM_attr_string(attr);
+        set_string(attr_str);
+    }
+
+    /* 
+        set_string: copies the parmater char * to the internal char structure
+        the old stored value is deleted 
+    */
+    method set_string(const char *ptr) {
+        if (len > 0) {delete val;}
+        len = strlen(ptr);
+        val = new char[len + 1];
+        strcpy(val, ptr);
+    }
+} 
+
+// Read len bytes of target memory from the address src in the memory
+// $target_mem_space. The result is put in memory pointed to by dst,
+// which must be large enough to hold at least len bytes. If a memory
+// access error occurs this method will print an error message and
+// throw an exception.
+method read_mem(void *dst,
+                physical_address_t src,
+                physical_address_t len) throws {
+    local exception_type_t exc;
+    exc = target_mem_space.memory_space.access_simple(dev.obj,
+                                                src,
+                                                dst,
+                                                len,
+                                                Sim_RW_Read,
+                                                Sim_Endian_Target);
+
+    if (exc != Sim_PE_No_Exception) {
+        log error: "an error occurred when reading target memory";
+        throw;
+    }
+}
+
+// Write len bytes to target memory from the memory pointed to by
+// src. The data is written to the memory space $target_mem_space at
+// address dst. If a memory access error occurs this method will
+// print an error message and throw an exception.
+method write_mem(physical_address_t dst,
+                 const void *src,
+                 physical_address_t len) throws {
+    local exception_type_t exc;
+    exc = target_mem_space.memory_space.access_simple(dev.obj,
+                                                dst,
+                                                cast(src, uint8*),
+                                                len,
+                                                Sim_RW_Write,
+                                                Sim_Endian_Target);
+
+    if (exc != Sim_PE_No_Exception) {
+        log error: "an error occurred when writing to target memory";
+        throw;
+    }
+}
+
+bank regs is function_mapped_bank {
+    param function = 1;
+    register dest size 4 @ 0x0 {
+        param init_val = 0x30000;        
+    }
+
+
+    register cmd size 4 @ 0x4 {
+        is write;
+        param init_val = 0x0;
+
+        //called on write by the processor
+        method write(uint64 value) {
+            local uint32 index = 0;
+            log info, 4: "cmd.write: value = %d", value;
+            if (value == 0x1) {
+                if(input.val != NULL) {
+                    log info, 4: "input.val = %s", input.val;
+                    local uint64 file_s = 0;
+                    file = fopen(input.val, "rb");
+
+                    //get the file size
+                    fseek(file, 0, 2);
+                    file_s = ftell(file);
+                    fseek(file, 0, 0);
+
+                    log info, 4: "file size = %d", file_s;
+                    for (index = 0; index < BUFFER_SIZE; index++) {
+                        local uint4 char_read = fgetc(file);
+                        buffer[index].set_val(char_read);
+                        log info, 4: "loaded val = %x @ buffer[%d]", char_read, index;
+                    }
+                    log info, 4: "Destination address = 0x%x", dest.get_val();
+                
+                    fclose(file);
+
+                    try {
+                        for (index = 0; index < BUFFER_SIZE; index++) {
+                            local uint8 buf[1] = {buffer[index].get_val()};
+                            write_mem(dest.get_val() + index, buf, 1);
+                            log info, 4: "Wrote val = %d @ 0x%x", buffer[index].get_val(), dest.get_val() + index;
+                        }
+
+                    } catch {
+                        log error: "IC dev memory access failed";
+                        return;
+                    }
+                    
+		        }
+            }
+
+        }
+
+    }
+
+    register buffer[i < BUFFER_SIZE] size 1 @ 0x18 + i {
+        is read_only;
+        param init_val = 0x0;
+    }
+
+}
+
+

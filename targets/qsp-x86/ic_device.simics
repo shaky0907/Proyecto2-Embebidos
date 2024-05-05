@@ -1,0 +1,12 @@
+run-command-file "%script%/firststeps.simics"
+board.mb.cpu0.core[0][0].info
+run 2 s
+board.mb.phys_mem.map
+@SIM_create_object("ic_device", "icd", target_mem_space=conf.board.mb.phys_mem)
+
+
+board.mb.phys_mem.add-map icd.bank.regs  0x250000000 0xc
+#For further information turning all verbose for the ic device
+icd.log-level 4 
+
+

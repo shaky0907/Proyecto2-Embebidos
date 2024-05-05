@@ -1,0 +1,11 @@
+
+pyiface-my_iface-interface-trampolines.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <py_my_iface_interface_trampoline_MNPT13conf_object_tKintPT15my_iface_data_tRKbool>:
+   0:	f3 0f 1e fa          	endbr64 
+   4:	48 b9 5c 5c 5c 5c c5 c5 c5 c5 	movabs $0xc5c5c5c55c5c5c5c,%rcx
+   e:	48 b8 be ba 01 c0 ef be ad de 	movabs $0xdeadbeefc001babe,%rax
+  18:	ff e0                	jmpq   *%rax
