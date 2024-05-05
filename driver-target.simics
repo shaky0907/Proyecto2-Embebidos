@@ -1,0 +1,7 @@
+$disk0_image = "./qsp-driver-support.craff"
+run-command-file targets/qsp-x86/qsp-clear-linux.simics
+
+load-module pci-capture-comp
+create-pci-capture-comp name = my_pci_card
+connect my_pci_card.pci_bus cnt1 = "board.mb.nb.pci_slot[1]"
+instantiate-components
