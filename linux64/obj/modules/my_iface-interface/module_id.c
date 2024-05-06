@@ -22,7 +22,7 @@ EXPORTED const char _module_capabilities_[] =
 	"API:" BUILD_API ";"
 	"BLD:" "0" ";"
 	"BLD_NS:__simics_project__;"
-	"BUILDDATE:" "1714870913" ";"
+	"BUILDDATE:" "1714897070" ";"
 	"MOD:" "my_iface-interface" ";"
 	"PYIFACE:my_iface;"
 	"HOSTTYPE:" "linux64" ";"
@@ -30,7 +30,7 @@ EXPORTED const char _module_capabilities_[] =
 	"PY_MINOR_VERSION:9;"
 	"THREADSAFE;"
 	EXTRA ";";
-EXPORTED const char _module_date[] = "Sat May  4 19:01:53 2024";
+EXPORTED const char _module_date[] = "Sun May  5 02:17:50 2024";
 extern void init_local(void) {}
 extern void init_python_my_iface_interface_module(void);
 EXPORTED void _simics_module_init(void);

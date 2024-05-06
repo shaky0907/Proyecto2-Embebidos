@@ -3,13 +3,13 @@ dir /home/david/Documents/Empotrados/Proyecto2-Embebidos
 dir /home/david/Documents/Empotrados/Proyecto2-Embebidos/linux64/lib
 file 599592 1714875230 dma-device.so
 cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714531847;MOD:dma-device;ABI:6275;API:6;PY_VERSION:0;PY_MINOR_VERSION:0;HOSTTYPE:linux64;CLS:dma_device;MODULE_LOAD;THREADSAFE;
-file 603328 1714888672 image-capture-device.so
+file 603424 1714973954 image-capture-device.so
 cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714879611;MOD:image-capture-device;ABI:6275;API:6;PY_VERSION:0;PY_MINOR_VERSION:0;HOSTTYPE:linux64;CLS:ic_device;MODULE_LOAD;THREADSAFE;
-file 119016 1714870913 my_iface-interface.so
-cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714870913;MOD:my_iface-interface;ABI:6275;API:6;PY_VERSION:3;PY_MINOR_VERSION:9;HOSTTYPE:linux64;PYIFACE:my_iface;THREADSAFE;
+file 119016 1714897071 my_iface-interface.so
+cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714897070;MOD:my_iface-interface;ABI:6275;API:6;PY_VERSION:3;PY_MINOR_VERSION:9;HOSTTYPE:linux64;PYIFACE:my_iface;THREADSAFE;
 file 18648 1714531849 pci-capture-comp.so
 cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714531849;MOD:pci-capture-comp;ABI:6275;API:6;PY_VERSION:0;PY_MINOR_VERSION:0;HOSTTYPE:linux64;CLS:pci_capture_comp;COMP:pci_capture_comp;MODULE_LOAD;THREADSAFE;
-file 1279984 1714540158 pci-data-capture.so
+file 1280952 1714973958 pci-data-capture.so
 cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714531849;MOD:pci-data-capture;ABI:6275;API:6;PY_VERSION:0;PY_MINOR_VERSION:0;HOSTTYPE:linux64;CLS:pci_data_capture;MODULE_LOAD;THREADSAFE;
 file 63328 1714531854 tomasulo.so
 cap VER:5000;BLD:0;BLD_NS:__simics_project__;BUILDDATE:1714531853;MOD:tomasulo;ABI:6275;API:6;PY_VERSION:0;PY_MINOR_VERSION:0;HOSTTYPE:linux64;CLS:tomasulo;CLS:tomasulo_connection_t;MODULE_LOAD;SIMICS_START;THREADSAFE;

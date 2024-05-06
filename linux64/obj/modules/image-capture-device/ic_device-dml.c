@@ -552,7 +552,7 @@ static const _id_info_t _id_infos[13] UNUSED = {
     {"dev", NULL, 0, 1},
     {"input", NULL, 0, 2},
     {"regs.bank_instrumentation_subscribe", NULL, 0, 3},
-    {"regs.buffer[%u]", (const uint32 []) {256}, 1, 4},
+    {"regs.buffer[%u]", (const uint32 []) {120200}, 1, 4},
     {"regs.cmd", NULL, 0, 5},
     {"regs.dest", NULL, 0, 6},
     {"regs.instrumentation_order", NULL, 0, 7},
@@ -565,7 +565,7 @@ static const _id_info_t _id_infos[13] UNUSED = {
 };
 static ht_str_table_t _id_info_ht UNUSED = HT_STR_NULL(false);
 static void * const _object_vtables[13] UNUSED = {(&_tr__dev__device.object), (&_tr_input__attribute._conf_attribute.object), (&_tr_regs_bank_instrumentation_subscribe__implement.object), (&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register._conf_attribute.object), (&_tr_regs_cmd____implicit__reg_write_as_field__write._reg_write_as_field._register._conf_attribute.object), (&_tr_regs_dest__register._conf_attribute.object), (&_tr_regs_instrumentation_order__implement.object), (&_tr_regs_io_memory__bank_io_memory.implement.object), (&_tr_regs_register_view__implement.object), (&_tr_regs_register_view_read_only__implement.object), (&_tr_regs__function_mapped_bank.bank.object), (&_tr_target_mem_space_memory_space__interface.object), (&_tr_target_mem_space__connect._conf_attribute.object)};
-static const _dml_port_object_assoc_t _port_object_assocs[13] UNUSED = {{0, 0}, {0, 0}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 256}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {0, 0}, {0, 0}};
+static const _dml_port_object_assoc_t _port_object_assocs[13] UNUSED = {{0, 0}, {0, 0}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 120200}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {offsetof(ic_device_t, regs._obj), 1}, {0, 0}, {0, 0}};
 static void _startup_calls(void)
 {
     _DML_M__register_all_attributes();
@@ -4531,7 +4531,7 @@ static void  _DML_M_regs__cmd__write(ic_device_t *_dev, uint64 value)
                 #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             }
             #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
-            for (; (int64 )v668_index < 0x100LL; (int64 )(v668_index)++)
+            for (; (int64 )v668_index < 0x1d588LL; (int64 )(v668_index)++)
             #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             {
                 uint8 v675_char_read UNUSED  = fgetc(_dev->file);
@@ -4548,7 +4548,7 @@ static void  _DML_M_regs__cmd__write(ic_device_t *_dev, uint64 value)
                 #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             }
             #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
-            for (; (int64 )v668_index < 0x100LL; (int64 )(v668_index)++)
+            for (; (int64 )v668_index < 0x1d588LL; (int64 )(v668_index)++)
             #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             {
                 uint8 v679_buf[1LL] UNUSED  = {(uint8 )(_DML_TM_register__get_val(_dev, UPCAST(UPCAST(({uint32 __indices[] = {(int64 )v668_index}; ((__implicit__reg_write_as_field__read_only) {(&_tr_regs_buffer____implicit__reg_write_as_field__read_only), ((_identity_t) {.id = 4, .encoded_index = __indices[0]})});}), __implicit__reg_write_as_field__read_only, _reg_write_as_field._register), _register, get._get.get_val)))};
@@ -5853,9 +5853,9 @@ static void __attribute__((optimize("O0"))) _initialize_traits0(void)
     _tinit_function_mapped_bank(&_tr_regs__function_mapped_bank, offsetof(ic_device_t, regs._after_read_callbacks), offsetof(ic_device_t, regs._after_write_callbacks), offsetof(ic_device_t, regs._before_read_callbacks), offsetof(ic_device_t, regs._before_write_callbacks), offsetof(ic_device_t, regs._cached_bank_obj), offsetof(ic_device_t, regs._connections), (_each_in_param_t){.base_idx = _each__register__in__regs, .num = 3, .array_idx = 0, .array_size = 1}, NULL, ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static struct _memo_bank___reginfo_table _tmp; &_tmp; }), ({static struct _memo_bank___sorted_regs _tmp; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static int _tmp __attribute__((aligned(2))); _tmp = (int32 )1LL; &_tmp; }), NULL, NULL, ({static char const *_tmp __attribute__((aligned(2))); _tmp = "regs"; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL, NULL, ({static char const *_tmp __attribute__((aligned(2))); _tmp = NULL; &_tmp; }), regs__transaction_access__trampoline_from_bank, NULL, NULL, NULL, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL);
     _tinit_implement(&_tr_regs_bank_instrumentation_subscribe__implement, ({static char const *_tmp __attribute__((aligned(2))); _tmp = "bank_instrumentation_subscribe"; &_tmp; }));
     {
-        bool (*_param_mapped)[0x100LL] = malloc(sizeof(*_param_mapped));
-        uint64 (*_param_offset)[0x100LL] = malloc(sizeof(*_param_offset));
-        for (unsigned _i0 = 0; _i0 < 256; ++_i0) {
+        bool (*_param_mapped)[0x1d588LL] = malloc(sizeof(*_param_mapped));
+        uint64 (*_param_offset)[0x1d588LL] = malloc(sizeof(*_param_offset));
+        for (unsigned _i0 = 0; _i0 < 120200; ++_i0) {
             (*_param_mapped)[_i0] = !DML_eq((int64 )(24ULL + (uint64 )(_i0)), 0xffffffffffffffffULL);
             (*_param_offset)[_i0] = 24ULL + (uint64 )(_i0);
         }
@@ -5876,14 +5876,14 @@ static void __attribute__((optimize("O0"))) _initialize_traits(void)
 }
 static const uint32 _each__init__in__dev UNUSED = 0;
 static const _vtable_list_t _each__init[3] UNUSED = {
-    {&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register.init_val.init, 256, 4},
+    {&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register.init_val.init, 120200, 4},
     {&_tr_regs_cmd____implicit__reg_write_as_field__write._reg_write_as_field._register.init_val.init, 1, 5},
     {&_tr_regs_dest__register.init_val.init, 1, 6}
 };
 static const _vtable_list_t *const _each__post_init UNUSED = NULL;
 static const uint32 _each__register__in__regs UNUSED = 0;
 static const _vtable_list_t _each__register[3] UNUSED = {
-    {&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register, 256, 4},
+    {&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register, 120200, 4},
     {&_tr_regs_cmd____implicit__reg_write_as_field__write._reg_write_as_field._register, 1, 5},
     {&_tr_regs_dest__register, 1, 6}
 };
@@ -5899,7 +5899,7 @@ static const _vtable_list_t _each__interface[1] UNUSED = {
 static const uint32 _each___conf_attribute__in__dev UNUSED = 0;
 static const _vtable_list_t _each___conf_attribute[5] UNUSED = {
     {&_tr_input__attribute._conf_attribute, 1, 2},
-    {&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register._conf_attribute, 256, 4},
+    {&_tr_regs_buffer____implicit__reg_write_as_field__read_only._reg_write_as_field._register._conf_attribute, 120200, 4},
     {&_tr_regs_cmd____implicit__reg_write_as_field__write._reg_write_as_field._register._conf_attribute, 1, 5},
     {&_tr_regs_dest__register._conf_attribute, 1, 6},
     {&_tr_target_mem_space__connect._conf_attribute, 1, 13}

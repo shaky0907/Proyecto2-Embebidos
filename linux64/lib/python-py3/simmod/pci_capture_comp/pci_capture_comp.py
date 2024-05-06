@@ -10,7 +10,8 @@
 import simics
 from comp import StandardComponent, SimpleConfigAttribute, Interface
 
-class pci_capture_comp(StandardComponent):
+class pci_capture_comp(StandardComponent,SimpleConfigAttribute(
+        None, 'i', simics.Sim_Attr_Required)):
     """Component that instantiates all the devices for the pci capture card"""
     _class_desc = "PCI capture component"
     _help_categories = ('PCI',)
@@ -21,13 +22,18 @@ class pci_capture_comp(StandardComponent):
             self.add_objects()
         self.add_connectors()
 
+
     def add_objects(self):
         sd = self.add_pre_obj('dev', 'pci_data_capture')
 
+
+
+        
     def add_connectors(self):
         self.add_connector(slot = 'pci_bus', type = 'pci-bus',
                            hotpluggable = True, required = False, multi = False,
                            direction = simics.Sim_Connector_Direction_Up)
+        
 
     class basename(StandardComponent.basename):
         """The default name for the created component"""
@@ -43,8 +49,11 @@ class pci_capture_comp(StandardComponent):
             return True
         def connect(self, cnt, attr):
             self._up.get_slot('dev').pci_bus = attr[1]
+            
         def disconnect(self, cnt):
             self._up.get_slot('dev').pci_bus = None
+
+    
 
 # END sample_components.py
 

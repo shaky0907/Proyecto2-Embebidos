@@ -30,7 +30,7 @@ connect target_mem_space {
 }
 
 //Variables
-param BUFFER_SIZE = 256;
+param BUFFER_SIZE = 120200;
 //this header statement imports header libraries from C directly
 header %{
 #include <stdio.h>

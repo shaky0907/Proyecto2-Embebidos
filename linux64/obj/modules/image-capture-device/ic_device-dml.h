@@ -1122,7 +1122,7 @@ struct __devstruct_1ic_device_0input {
     char *val;
 };
 struct __devstruct_1ic_device_0regs_0buffer {
-    uint64 val[0x100LL];
+    uint64 val[0x1d588LL];
 };
 struct __devstruct_1ic_device_0regs_0cmd {
     uint64 val;

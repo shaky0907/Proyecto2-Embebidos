@@ -7,12 +7,12 @@ make
 ./simics driver-target.simics
 
 #dentro de simics
-start-agent-manager
+    start-agent-manager
 run
 agent_manager.connect-to-agent
 matic0.upload from = driver/Makefile to = /home/simics
 matic0.upload from = driver/pci_capture_driver.c to = /home/simics
-matic0.upload from = driver/test_ioctl.c to = /home/simics
+matic0.upload from = Filtro/main.cpp to = /home/simics
 
 #dentro de la consola simulada
 make
@@ -22,3 +22,15 @@ sudo insmod pci_capture_module.ko
 lspci -vnd:ac10
 
 gcc -o test test_ioctl.c
+
+
+icd->input = "goku.bmp"
+icd->input = "homero.bmp"
+board.mb.phys_mem.write 0x250000004 0x01000000
+board.mb.nb.pci_bus.mem_space.write 0xf1000000 + 0x14 0x1 0x4
+
+my_pci_card.dev.bank.regs->buffer
+
+
+matic0.download from = /home/simics/Negative.bmp to = Images
+matic0.download from = /home/simics/Blurred.bmp to = Images

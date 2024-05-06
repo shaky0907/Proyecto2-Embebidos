@@ -2,6 +2,18 @@ $disk0_image = "./qsp-driver-support.craff"
 run-command-file targets/qsp-x86/qsp-clear-linux.simics
 
 load-module pci-capture-comp
+load-module module = pci-data-capture
 create-pci-capture-comp name = my_pci_card
 connect my_pci_card.pci_bus cnt1 = "board.mb.nb.pci_slot[1]"
 instantiate-components
+
+board.mb.phys_mem.map
+@SIM_create_object("ic_device", "icd", target_mem_space=conf.board.mb.phys_mem)
+board.mb.phys_mem.add-map icd.bank.regs  0x250000000 0xc
+#For further information turning all verbose for the ic device
+icd.log-level 4 
+instantiate-components
+my_pci_card.log-level 4
+@conf.my_pci_card.dev.target_mem_space = conf.icd.target_mem_space
+
+

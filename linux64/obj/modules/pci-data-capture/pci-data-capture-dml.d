@@ -116,15 +116,15 @@ pci-data-capture-dml.d pci-data-capture-dml.o: \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/processor/types.h \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/base/map-target.h \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/base/direct-memory.h \
+ /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/pci.h \
+ /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/map-demap.h \
+ /home/david/SIMICS/simics-6.0.185/src/include/simics/util/bitcount.h \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/signal.h \
+ /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/ram.h \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/base/cbdata.h \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/translator.h \
  /home/david/SIMICS/simics-6.0.185/src/include/simics/model-iface/transaction.h \
- /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/pci.h \
- /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/map-demap.h \
- /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/memory-space.h \
- /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/ram.h \
- /home/david/SIMICS/simics-6.0.185/src/include/simics/util/bitcount.h
+ /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/memory-space.h
 
 /usr/include/stdc-predef.h:
 
@@ -376,7 +376,15 @@ pci-data-capture-dml.d pci-data-capture-dml.o: \
 
 /home/david/SIMICS/simics-6.0.185/src/include/simics/base/direct-memory.h:
 
+/home/david/SIMICS/simics-6.0.185/src/include/simics/devs/pci.h:
+
+/home/david/SIMICS/simics-6.0.185/src/include/simics/devs/map-demap.h:
+
+/home/david/SIMICS/simics-6.0.185/src/include/simics/util/bitcount.h:
+
 /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/signal.h:
+
+/home/david/SIMICS/simics-6.0.185/src/include/simics/devs/ram.h:
 
 /home/david/SIMICS/simics-6.0.185/src/include/simics/base/cbdata.h:
 
@@ -384,12 +392,4 @@ pci-data-capture-dml.d pci-data-capture-dml.o: \
 
 /home/david/SIMICS/simics-6.0.185/src/include/simics/model-iface/transaction.h:
 
-/home/david/SIMICS/simics-6.0.185/src/include/simics/devs/pci.h:
-
-/home/david/SIMICS/simics-6.0.185/src/include/simics/devs/map-demap.h:
-
 /home/david/SIMICS/simics-6.0.185/src/include/simics/devs/memory-space.h:
-
-/home/david/SIMICS/simics-6.0.185/src/include/simics/devs/ram.h:
-
-/home/david/SIMICS/simics-6.0.185/src/include/simics/util/bitcount.h:

@@ -138,10 +138,38 @@
 
 #include <simics/device-api.h>
 #undef DMLDIR_DEVICE_API_H
+#define DMLDIR_PCI_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/pci.h"
+
+#include <simics/devs/pci.h>
+#undef DMLDIR_PCI_H
+#define DMLDIR_MAP_DEMAP_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/map-demap.h"
+
+#include <simics/devs/map-demap.h>
+#undef DMLDIR_MAP_DEMAP_H
+#define DMLDIR_BITCOUNT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/bitcount.h"
+
+#include <simics/util/bitcount.h>
+#undef DMLDIR_BITCOUNT_H
+#define DMLDIR_COMMON_H "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.h"
+
+    static const char *const irq_pin_name[] = {
+        "INT#A",
+        "INT#B",
+        "INT#C",
+        "INT#D"
+    };
+
+    #include <simics/util/bitcount.h>
+    #define convert_le64 CONVERT_LE64
+#undef DMLDIR_COMMON_H
 #define DMLDIR_SIGNAL_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/signal.h"
 
 #include <simics/devs/signal.h>
 #undef DMLDIR_SIGNAL_H
+#define DMLDIR_RAM_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/ram.h"
+
+#include <simics/devs/ram.h>
+#undef DMLDIR_RAM_H
 #define DMLDIR_CBDATA_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/cbdata.h"
 
 #include <simics/base/cbdata.h>
@@ -150,10 +178,6 @@
 
 #include <simics/devs/translator.h>
 #undef DMLDIR_TRANSLATOR_H
-#define DMLDIR_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/model-iface/transaction.h"
-
-#include <simics/model-iface/transaction.h>
-#undef DMLDIR_TRANSACTION_H
 #define DMLDIR_BREAKPOINTS_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/breakpoints.h"
 
 #include <simics/base/breakpoints.h>
@@ -174,14 +198,14 @@
 
 #include <simics/base/transaction.h>
 #undef DMLDIR_TRANSACTION_H
-#define DMLDIR_PCI_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/pci.h"
+#define DMLDIR_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/model-iface/transaction.h"
 
-#include <simics/devs/pci.h>
-#undef DMLDIR_PCI_H
-#define DMLDIR_MAP_DEMAP_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/map-demap.h"
+#include <simics/model-iface/transaction.h>
+#undef DMLDIR_TRANSACTION_H
+#define DMLDIR_MEMORY_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory.h"
 
-#include <simics/devs/map-demap.h>
-#undef DMLDIR_MAP_DEMAP_H
+#include <simics/base/memory.h>
+#undef DMLDIR_MEMORY_H
 #define DMLDIR_MEMORY_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory-transaction.h"
 
 #include <simics/base/memory-transaction.h>
@@ -190,6 +214,10 @@
 
 #include <simics/base/sobject.h>
 #undef DMLDIR_SOBJECT_H
+#define DMLDIR_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/types.h"
+
+#include <simics/base/types.h>
+#undef DMLDIR_TYPES_H
 #define DMLDIR_VERSION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/version.h"
 
 #include <simics/base/version.h>
@@ -202,6 +230,18 @@
 
 #include <simics/util/alloc.h>
 #undef DMLDIR_ALLOC_H
+#define DMLDIR_MODULE_HOST_CONFIG_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/module-host-config.h"
+
+#include <simics/module-host-config.h>
+#undef DMLDIR_MODULE_HOST_CONFIG_H
+#define DMLDIR_HOST_INFO_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/host-info.h"
+
+#include <simics/host-info.h>
+#undef DMLDIR_HOST_INFO_H
+#define DMLDIR_BASE_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base-types.h"
+
+#include <simics/base-types.h>
+#undef DMLDIR_BASE_TYPES_H
 #define DMLDIR_STRBUF_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/strbuf.h"
 
 #include <simics/util/strbuf.h>
@@ -222,54 +262,14 @@
 
 #include <simics/base/time.h>
 #undef DMLDIR_TIME_H
-#define DMLDIR_MEMORY_SPACE_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/memory-space.h"
-
-#include <simics/devs/memory-space.h>
-#undef DMLDIR_MEMORY_SPACE_H
 #define DMLDIR_PYWRAP_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/pywrap.h"
 
 #include <simics/pywrap.h>
 #undef DMLDIR_PYWRAP_H
-#define DMLDIR_RAM_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/ram.h"
+#define DMLDIR_MEMORY_SPACE_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/memory-space.h"
 
-#include <simics/devs/ram.h>
-#undef DMLDIR_RAM_H
-#define DMLDIR_BITCOUNT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/bitcount.h"
-
-#include <simics/util/bitcount.h>
-#undef DMLDIR_BITCOUNT_H
-#define DMLDIR_MODULE_HOST_CONFIG_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/module-host-config.h"
-
-#include <simics/module-host-config.h>
-#undef DMLDIR_MODULE_HOST_CONFIG_H
-#define DMLDIR_HOST_INFO_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/host-info.h"
-
-#include <simics/host-info.h>
-#undef DMLDIR_HOST_INFO_H
-#define DMLDIR_BASE_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base-types.h"
-
-#include <simics/base-types.h>
-#undef DMLDIR_BASE_TYPES_H
-#define DMLDIR_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/types.h"
-
-#include <simics/base/types.h>
-#undef DMLDIR_TYPES_H
-#define DMLDIR_MEMORY_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory.h"
-
-#include <simics/base/memory.h>
-#undef DMLDIR_MEMORY_H
-#define DMLDIR_COMMON_H "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.h"
-
-    static const char *const irq_pin_name[] = {
-        "INT#A",
-        "INT#B",
-        "INT#C",
-        "INT#D"
-    };
-
-    #include <simics/util/bitcount.h>
-    #define convert_le64 CONVERT_LE64
-#undef DMLDIR_COMMON_H
+#include <simics/devs/memory-space.h>
+#undef DMLDIR_MEMORY_SPACE_H
 #define DMLDIR_PCI_DATA_CAPTURE_H "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/pci-data-capture.h"
 
 #include <stdio.h>

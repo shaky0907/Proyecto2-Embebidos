@@ -250,215 +250,26 @@
 #line 251 "pci-data-capture-dml.h"
 #undef DMLDIR_DEVICE_API_H
 
-#define DMLDIR_SIGNAL_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/signal.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/signal.dml"
-
-#include <simics/devs/signal.h>
-#line 258 "pci-data-capture-dml.h"
-#undef DMLDIR_SIGNAL_H
-
-#define DMLDIR_CBDATA_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/cbdata.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/cbdata.dml"
-
-#include <simics/base/cbdata.h>
-#line 265 "pci-data-capture-dml.h"
-#undef DMLDIR_CBDATA_H
-
-#define DMLDIR_TRANSLATOR_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/translator.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/translator.dml"
-
-#include <simics/devs/translator.h>
-#line 272 "pci-data-capture-dml.h"
-#undef DMLDIR_TRANSLATOR_H
-
-#define DMLDIR_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/model-iface/transaction.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/model-iface/transaction.dml"
-
-#include <simics/model-iface/transaction.h>
-#line 279 "pci-data-capture-dml.h"
-#undef DMLDIR_TRANSACTION_H
-
-#define DMLDIR_BREAKPOINTS_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/breakpoints.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/breakpoints.dml"
-
-#include <simics/base/breakpoints.h>
-#line 286 "pci-data-capture-dml.h"
-#undef DMLDIR_BREAKPOINTS_H
-
-#define DMLDIR_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/processor/types.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/processor/types.dml"
-
-#include <simics/processor/types.h>
-#line 293 "pci-data-capture-dml.h"
-#undef DMLDIR_TYPES_H
-
-#define DMLDIR_DIRECT_MEMORY_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/direct-memory.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/direct-memory.dml"
-
-#include <simics/base/direct-memory.h>
-#line 300 "pci-data-capture-dml.h"
-#undef DMLDIR_DIRECT_MEMORY_H
-
-#define DMLDIR_MAP_TARGET_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/map-target.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/map-target.dml"
-
-#include <simics/base/map-target.h>
-#line 307 "pci-data-capture-dml.h"
-#undef DMLDIR_MAP_TARGET_H
-
-#define DMLDIR_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/transaction.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/transaction.dml"
-
-#include <simics/base/transaction.h>
-#line 314 "pci-data-capture-dml.h"
-#undef DMLDIR_TRANSACTION_H
-
 #define DMLDIR_PCI_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/pci.h"
 #line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/pci.dml"
 
 #include <simics/devs/pci.h>
-#line 321 "pci-data-capture-dml.h"
+#line 258 "pci-data-capture-dml.h"
 #undef DMLDIR_PCI_H
 
 #define DMLDIR_MAP_DEMAP_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/map-demap.h"
 #line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/map-demap.dml"
 
 #include <simics/devs/map-demap.h>
-#line 328 "pci-data-capture-dml.h"
+#line 265 "pci-data-capture-dml.h"
 #undef DMLDIR_MAP_DEMAP_H
-
-#define DMLDIR_MEMORY_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory-transaction.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory-transaction.dml"
-
-#include <simics/base/memory-transaction.h>
-#line 335 "pci-data-capture-dml.h"
-#undef DMLDIR_MEMORY_TRANSACTION_H
-
-#define DMLDIR_SOBJECT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/sobject.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/sobject.dml"
-
-#include <simics/base/sobject.h>
-#line 342 "pci-data-capture-dml.h"
-#undef DMLDIR_SOBJECT_H
-
-#define DMLDIR_VERSION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/version.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/version.dml"
-
-#include <simics/base/version.h>
-#line 349 "pci-data-capture-dml.h"
-#undef DMLDIR_VERSION_H
-
-#define DMLDIR_ATTR_VALUE_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/attr-value.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/attr-value.dml"
-
-#include <simics/base/attr-value.h>
-#line 356 "pci-data-capture-dml.h"
-#undef DMLDIR_ATTR_VALUE_H
-
-#define DMLDIR_ALLOC_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/alloc.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/alloc.dml"
-
-#include <simics/util/alloc.h>
-#line 363 "pci-data-capture-dml.h"
-#undef DMLDIR_ALLOC_H
-
-#define DMLDIR_STRBUF_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/strbuf.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/strbuf.dml"
-
-#include <simics/util/strbuf.h>
-#line 370 "pci-data-capture-dml.h"
-#undef DMLDIR_STRBUF_H
-
-#define DMLDIR_HELP_MACROS_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/help-macros.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/help-macros.dml"
-
-#include <simics/util/help-macros.h>
-#line 377 "pci-data-capture-dml.h"
-#undef DMLDIR_HELP_MACROS_H
-
-#define DMLDIR_VECT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/vect.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/vect.dml"
-
-#include <simics/util/vect.h>
-#line 384 "pci-data-capture-dml.h"
-#undef DMLDIR_VECT_H
-
-#define DMLDIR_CONF_OBJECT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/conf-object.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/conf-object.dml"
-
-#include <simics/base/conf-object.h>
-#line 391 "pci-data-capture-dml.h"
-#undef DMLDIR_CONF_OBJECT_H
-
-#define DMLDIR_TIME_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/time.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/time.dml"
-
-#include <simics/base/time.h>
-#line 398 "pci-data-capture-dml.h"
-#undef DMLDIR_TIME_H
-
-#define DMLDIR_MEMORY_SPACE_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/memory-space.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/memory-space.dml"
-
-#include <simics/devs/memory-space.h>
-#line 405 "pci-data-capture-dml.h"
-#undef DMLDIR_MEMORY_SPACE_H
-
-#define DMLDIR_PYWRAP_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/pywrap.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/pywrap.dml"
-
-#include <simics/pywrap.h>
-#line 412 "pci-data-capture-dml.h"
-#undef DMLDIR_PYWRAP_H
-
-#define DMLDIR_RAM_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/ram.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/ram.dml"
-
-#include <simics/devs/ram.h>
-#line 419 "pci-data-capture-dml.h"
-#undef DMLDIR_RAM_H
 
 #define DMLDIR_BITCOUNT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/bitcount.h"
 #line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/bitcount.dml"
 
 #include <simics/util/bitcount.h>
-#line 426 "pci-data-capture-dml.h"
+#line 272 "pci-data-capture-dml.h"
 #undef DMLDIR_BITCOUNT_H
-
-#define DMLDIR_MODULE_HOST_CONFIG_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/module-host-config.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/module-host-config.dml"
-
-#include <simics/module-host-config.h>
-#line 433 "pci-data-capture-dml.h"
-#undef DMLDIR_MODULE_HOST_CONFIG_H
-
-#define DMLDIR_HOST_INFO_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/host-info.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/host-info.dml"
-
-#include <simics/host-info.h>
-#line 440 "pci-data-capture-dml.h"
-#undef DMLDIR_HOST_INFO_H
-
-#define DMLDIR_BASE_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base-types.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base-types.dml"
-
-#include <simics/base-types.h>
-#line 447 "pci-data-capture-dml.h"
-#undef DMLDIR_BASE_TYPES_H
-
-#define DMLDIR_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/types.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/types.dml"
-
-#include <simics/base/types.h>
-#line 454 "pci-data-capture-dml.h"
-#undef DMLDIR_TYPES_H
-
-#define DMLDIR_MEMORY_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory.h"
-#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory.dml"
-
-#include <simics/base/memory.h>
-#line 461 "pci-data-capture-dml.h"
-#undef DMLDIR_MEMORY_H
 
 #define DMLDIR_COMMON_H "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.h"
 #line 29 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -472,8 +283,197 @@
 
     #include <simics/util/bitcount.h>
     #define convert_le64 CONVERT_LE64
-#line 476 "pci-data-capture-dml.h"
+#line 287 "pci-data-capture-dml.h"
 #undef DMLDIR_COMMON_H
+
+#define DMLDIR_SIGNAL_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/signal.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/signal.dml"
+
+#include <simics/devs/signal.h>
+#line 294 "pci-data-capture-dml.h"
+#undef DMLDIR_SIGNAL_H
+
+#define DMLDIR_RAM_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/ram.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/ram.dml"
+
+#include <simics/devs/ram.h>
+#line 301 "pci-data-capture-dml.h"
+#undef DMLDIR_RAM_H
+
+#define DMLDIR_CBDATA_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/cbdata.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/cbdata.dml"
+
+#include <simics/base/cbdata.h>
+#line 308 "pci-data-capture-dml.h"
+#undef DMLDIR_CBDATA_H
+
+#define DMLDIR_TRANSLATOR_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/translator.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/translator.dml"
+
+#include <simics/devs/translator.h>
+#line 315 "pci-data-capture-dml.h"
+#undef DMLDIR_TRANSLATOR_H
+
+#define DMLDIR_BREAKPOINTS_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/breakpoints.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/breakpoints.dml"
+
+#include <simics/base/breakpoints.h>
+#line 322 "pci-data-capture-dml.h"
+#undef DMLDIR_BREAKPOINTS_H
+
+#define DMLDIR_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/processor/types.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/processor/types.dml"
+
+#include <simics/processor/types.h>
+#line 329 "pci-data-capture-dml.h"
+#undef DMLDIR_TYPES_H
+
+#define DMLDIR_DIRECT_MEMORY_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/direct-memory.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/direct-memory.dml"
+
+#include <simics/base/direct-memory.h>
+#line 336 "pci-data-capture-dml.h"
+#undef DMLDIR_DIRECT_MEMORY_H
+
+#define DMLDIR_MAP_TARGET_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/map-target.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/map-target.dml"
+
+#include <simics/base/map-target.h>
+#line 343 "pci-data-capture-dml.h"
+#undef DMLDIR_MAP_TARGET_H
+
+#define DMLDIR_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/transaction.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/transaction.dml"
+
+#include <simics/base/transaction.h>
+#line 350 "pci-data-capture-dml.h"
+#undef DMLDIR_TRANSACTION_H
+
+#define DMLDIR_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/model-iface/transaction.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/model-iface/transaction.dml"
+
+#include <simics/model-iface/transaction.h>
+#line 357 "pci-data-capture-dml.h"
+#undef DMLDIR_TRANSACTION_H
+
+#define DMLDIR_MEMORY_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory.dml"
+
+#include <simics/base/memory.h>
+#line 364 "pci-data-capture-dml.h"
+#undef DMLDIR_MEMORY_H
+
+#define DMLDIR_MEMORY_TRANSACTION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory-transaction.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/memory-transaction.dml"
+
+#include <simics/base/memory-transaction.h>
+#line 371 "pci-data-capture-dml.h"
+#undef DMLDIR_MEMORY_TRANSACTION_H
+
+#define DMLDIR_SOBJECT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/sobject.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/sobject.dml"
+
+#include <simics/base/sobject.h>
+#line 378 "pci-data-capture-dml.h"
+#undef DMLDIR_SOBJECT_H
+
+#define DMLDIR_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/types.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/types.dml"
+
+#include <simics/base/types.h>
+#line 385 "pci-data-capture-dml.h"
+#undef DMLDIR_TYPES_H
+
+#define DMLDIR_VERSION_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/version.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/version.dml"
+
+#include <simics/base/version.h>
+#line 392 "pci-data-capture-dml.h"
+#undef DMLDIR_VERSION_H
+
+#define DMLDIR_ATTR_VALUE_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/attr-value.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/attr-value.dml"
+
+#include <simics/base/attr-value.h>
+#line 399 "pci-data-capture-dml.h"
+#undef DMLDIR_ATTR_VALUE_H
+
+#define DMLDIR_ALLOC_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/alloc.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/alloc.dml"
+
+#include <simics/util/alloc.h>
+#line 406 "pci-data-capture-dml.h"
+#undef DMLDIR_ALLOC_H
+
+#define DMLDIR_MODULE_HOST_CONFIG_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/module-host-config.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/module-host-config.dml"
+
+#include <simics/module-host-config.h>
+#line 413 "pci-data-capture-dml.h"
+#undef DMLDIR_MODULE_HOST_CONFIG_H
+
+#define DMLDIR_HOST_INFO_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/host-info.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/host-info.dml"
+
+#include <simics/host-info.h>
+#line 420 "pci-data-capture-dml.h"
+#undef DMLDIR_HOST_INFO_H
+
+#define DMLDIR_BASE_TYPES_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base-types.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base-types.dml"
+
+#include <simics/base-types.h>
+#line 427 "pci-data-capture-dml.h"
+#undef DMLDIR_BASE_TYPES_H
+
+#define DMLDIR_STRBUF_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/strbuf.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/strbuf.dml"
+
+#include <simics/util/strbuf.h>
+#line 434 "pci-data-capture-dml.h"
+#undef DMLDIR_STRBUF_H
+
+#define DMLDIR_HELP_MACROS_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/help-macros.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/help-macros.dml"
+
+#include <simics/util/help-macros.h>
+#line 441 "pci-data-capture-dml.h"
+#undef DMLDIR_HELP_MACROS_H
+
+#define DMLDIR_VECT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/vect.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/util/vect.dml"
+
+#include <simics/util/vect.h>
+#line 448 "pci-data-capture-dml.h"
+#undef DMLDIR_VECT_H
+
+#define DMLDIR_CONF_OBJECT_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/conf-object.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/conf-object.dml"
+
+#include <simics/base/conf-object.h>
+#line 455 "pci-data-capture-dml.h"
+#undef DMLDIR_CONF_OBJECT_H
+
+#define DMLDIR_TIME_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/time.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/base/time.dml"
+
+#include <simics/base/time.h>
+#line 462 "pci-data-capture-dml.h"
+#undef DMLDIR_TIME_H
+
+#define DMLDIR_PYWRAP_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/pywrap.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/pywrap.dml"
+
+#include <simics/pywrap.h>
+#line 469 "pci-data-capture-dml.h"
+#undef DMLDIR_PYWRAP_H
+
+#define DMLDIR_MEMORY_SPACE_H "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/memory-space.h"
+#line 16 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/api/6/1.4/simics/devs/memory-space.dml"
+
+#include <simics/devs/memory-space.h>
+#line 476 "pci-data-capture-dml.h"
+#undef DMLDIR_MEMORY_SPACE_H
 
 #define DMLDIR_PCI_DATA_CAPTURE_H "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/pci-data-capture.h"
 #line 22 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/pci-data-capture.dml"
@@ -517,6 +517,8 @@ typedef _traitref_t _reg_or_field;
 typedef _traitref_t read_only;
 typedef _traitref_t __write;
 typedef _traitref_t function_mapped_bank;
+typedef _traitref_t _connect;
+typedef _traitref_t _interface;
 typedef _traitref_t _lsb;
 typedef _traitref_t field;
 typedef _traitref_t ignore_write;
@@ -533,7 +535,6 @@ typedef _traitref_t __read;
 typedef _traitref_t base_address;
 typedef _traitref_t memory_base_address_generic;
 typedef _traitref_t memory_base_address_32;
-typedef _traitref_t attribute;
 typedef _traitref_t read_only_custom_write;
 typedef _traitref_t _pci_config_type_0;
 typedef _traitref_t read_zero;
@@ -548,6 +549,7 @@ typedef _traitref_t rbar_capable_bank;
 typedef _traitref_t _pci_config_generic;
 typedef _traitref_t pci_config_generic;
 typedef _traitref_t pci_config_type_0;
+typedef _traitref_t attribute;
 typedef _traitref_t pseudo_attr;
 typedef _traitref_t read_only_attr;
 typedef _traitref_t function_io_memory;
@@ -555,8 +557,6 @@ typedef _traitref_t providing_pci_device_interface;
 typedef _traitref_t providing_legacy_interrupts;
 typedef _traitref_t providing_dma_methods;
 typedef _traitref_t uint64_attr;
-typedef _traitref_t _connect;
-typedef _traitref_t _interface;
 typedef _traitref_t providing_expansion_rom_connect;
 typedef _traitref_t pci_bus_connect;
 typedef _traitref_t pci_device_params;
@@ -577,6 +577,31 @@ typedef _traitref_t _write_field;
 typedef _traitref_t _read_field;
 typedef _traitref_t _reg_write_as_field;
 typedef _traitref_t _reg_read_as_field;
+typedef _traitref_t _init_val_power_on_reset;
+typedef _traitref_t poreset;
+typedef _traitref_t soft_reset_val;
+typedef _traitref_t write_only;
+typedef _traitref_t clear_on_read;
+typedef _traitref_t write_1_only;
+typedef _traitref_t write_0_only;
+typedef _traitref_t read_constant;
+typedef _traitref_t zeros;
+typedef _traitref_t ones;
+typedef _traitref_t ignore;
+typedef _traitref_t reserved;
+typedef _traitref_t _log_unimpl_read;
+typedef _traitref_t _log_unimpl_write;
+typedef _traitref_t unimpl;
+typedef _traitref_t read_unimpl;
+typedef _traitref_t write_unimpl;
+typedef _traitref_t silent_unimpl;
+typedef _traitref_t undocumented;
+typedef _traitref_t sticky;
+typedef _traitref_t design_limitation;
+typedef _traitref_t bank_obj;
+typedef _traitref_t map_target;
+typedef _traitref_t signal_port;
+typedef _traitref_t signal_connect;
 typedef _traitref_t pcie_device;
 typedef _traitref_t pci_mf_device;
 typedef _traitref_t pci_config_type_0_mf;
@@ -638,7 +663,6 @@ typedef _traitref_t defining_pcie_capability_root_ports_v5;
 typedef _traitref_t defining_pcie_capability_v1;
 typedef _traitref_t defining_pcie_capability_v2;
 typedef _traitref_t defining_pcie_capability_v3;
-typedef _traitref_t sticky;
 typedef _traitref_t _defining_pcie_aer_capability_common;
 typedef _traitref_t defining_pcie_aer_capability_v1;
 typedef _traitref_t defining_pcie_aer_capability_v2;
@@ -832,30 +856,6 @@ typedef _traitref_t msix_pba_bank;
 typedef _traitref_t providing_msix_interrupts;
 typedef _traitref_t defining_pci_pcix_capability;
 typedef _traitref_t defining_pci_pm_capability;
-typedef _traitref_t _init_val_power_on_reset;
-typedef _traitref_t poreset;
-typedef _traitref_t soft_reset_val;
-typedef _traitref_t write_only;
-typedef _traitref_t clear_on_read;
-typedef _traitref_t write_1_only;
-typedef _traitref_t write_0_only;
-typedef _traitref_t read_constant;
-typedef _traitref_t zeros;
-typedef _traitref_t ones;
-typedef _traitref_t ignore;
-typedef _traitref_t reserved;
-typedef _traitref_t _log_unimpl_read;
-typedef _traitref_t _log_unimpl_write;
-typedef _traitref_t unimpl;
-typedef _traitref_t read_unimpl;
-typedef _traitref_t write_unimpl;
-typedef _traitref_t silent_unimpl;
-typedef _traitref_t undocumented;
-typedef _traitref_t design_limitation;
-typedef _traitref_t bank_obj;
-typedef _traitref_t map_target;
-typedef _traitref_t signal_port;
-typedef _traitref_t signal_connect;
 typedef _traitref_t group;
 typedef _traitref_t bool_attr;
 typedef _traitref_t int64_attr;
@@ -1064,6 +1064,19 @@ struct _function_mapped_bank {
     struct _bank bank;
     int *function;
 };
+struct __connect {
+    struct __conf_attribute _conf_attribute;
+    _each_in_param_t _each_interface;
+    uint32 obj;
+    uint32 port;
+    bool (*validate)(pci_data_capture_t *arg0, _connect arg1, conf_object_t *arg2);
+    void  (*set)(pci_data_capture_t *arg0, _connect arg1, conf_object_t *arg2);
+};
+struct __interface {
+    struct _object object;
+    bool *_required;
+    uint32 val;
+};
 struct __lsb {
     uint8 *lsb;
 };
@@ -1151,11 +1164,6 @@ struct _memory_base_address_generic {
 struct _memory_base_address_32 {
     struct _memory_base_address_generic memory_base_address_generic;
 };
-struct _attribute {
-    struct __conf_attribute _conf_attribute;
-    attr_value_t (*get)(pci_data_capture_t *arg0, attribute arg1);
-    bool (*set)(pci_data_capture_t *arg0, attribute arg1, attr_value_t arg2);
-};
 struct _read_only_custom_write {
     struct __register _register;
     struct ___write __write;
@@ -1220,6 +1228,11 @@ struct _pci_config_type_0 {
     struct __pci_config_type_0 _pci_config_type_0;
     struct _pci_config_generic pci_config_generic;
 };
+struct _attribute {
+    struct __conf_attribute _conf_attribute;
+    attr_value_t (*get)(pci_data_capture_t *arg0, attribute arg1);
+    bool (*set)(pci_data_capture_t *arg0, attribute arg1, attr_value_t arg2);
+};
 struct _pseudo_attr {
     struct _attribute attribute;
 };
@@ -1239,19 +1252,6 @@ struct _uint64_attr {
     struct _attribute attribute;
     struct _init init;
     uint64 *init_val;
-    uint32 val;
-};
-struct __connect {
-    struct __conf_attribute _conf_attribute;
-    _each_in_param_t _each_interface;
-    uint32 obj;
-    uint32 port;
-    bool (*validate)(pci_data_capture_t *arg0, _connect arg1, conf_object_t *arg2);
-    void  (*set)(pci_data_capture_t *arg0, _connect arg1, conf_object_t *arg2);
-};
-struct __interface {
-    struct _object object;
-    bool *_required;
     uint32 val;
 };
 struct _providing_expansion_rom_connect {
@@ -1329,6 +1329,118 @@ struct __reg_write_as_field {
 struct __reg_read_as_field {
     struct _read_field read_field;
     struct __register _register;
+};
+struct __init_val_power_on_reset {
+    struct _init_val init_val;
+    struct _power_on_reset power_on_reset;
+};
+struct _poreset {
+    struct _power_on_reset power_on_reset;
+};
+struct _soft_reset_val {
+    struct _set_val set_val;
+    struct __soft_reset _soft_reset;
+    uint64 *soft_reset_val;
+};
+struct _write_only {
+    struct __qname _qname;
+    struct _read_field read_field;
+};
+struct _clear_on_read {
+    struct _get_val get_val;
+    struct _read_field read_field;
+    struct _set_val set_val;
+};
+struct _write_1_only {
+    struct __simple_write _simple_write;
+    struct _write_field write_field;
+};
+struct _write_0_only {
+    struct __simple_write _simple_write;
+    struct _write_field write_field;
+};
+struct _read_constant {
+    struct _read_field read_field;
+    uint64 *read_val;
+};
+struct _zeros {
+    struct _constant constant;
+    struct _init_val init_val;
+};
+struct _ones {
+    struct _constant constant;
+    struct _init_val init_val;
+};
+struct _ignore {
+    struct _ignore_write ignore_write;
+    struct _no_reset no_reset;
+};
+struct _reserved {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct __simple_write _simple_write;
+    struct _write_field write_field;
+    uint32 _has_logged;
+};
+struct __log_unimpl_read {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct _get_val get_val;
+    struct _read_field read_field;
+};
+struct __log_unimpl_write {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct __simple_write _simple_write;
+    struct _write_field write_field;
+};
+struct _unimpl {
+    struct __log_unimpl_read _log_unimpl_read;
+    struct __log_unimpl_write _log_unimpl_write;
+    struct _limitations limitations;
+};
+struct _read_unimpl {
+    struct __log_unimpl_read _log_unimpl_read;
+    struct _limitations limitations;
+};
+struct _write_unimpl {
+    struct __log_unimpl_write _log_unimpl_write;
+    struct _object object;
+};
+struct _silent_unimpl {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct __simple_write _simple_write;
+    struct _limitations limitations;
+    struct _read_field read_field;
+    struct _write_field write_field;
+};
+struct _undocumented {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct __simple_write _simple_write;
+    struct _read_field read_field;
+    struct _write_field write_field;
+};
+struct _sticky {
+    struct __soft_reset _soft_reset;
+};
+struct _design_limitation {
+    struct _limitations limitations;
+};
+struct _bank_obj {
+    struct _bank bank;
+};
+struct _map_target {
+    struct __connect _connect;
+    uint32 map_target;
+    exception_type_t (*issue)(pci_data_capture_t *arg0, map_target arg1, transaction_t *arg2, uint64 arg3);
+};
+struct _signal_port {
+};
+struct _signal_connect {
+    struct __connect _connect;
+    struct _post_init post_init;
 };
 struct _pcie_device {
     struct _pci_device pci_device;
@@ -1524,9 +1636,6 @@ struct _defining_pcie_capability_v2 {
 };
 struct _defining_pcie_capability_v3 {
     struct _defining_pcie_capability_root_ports_v3 defining_pcie_capability_root_ports_v3;
-};
-struct _sticky {
-    struct __soft_reset _soft_reset;
 };
 struct __defining_pcie_aer_capability_common {
 };
@@ -2070,115 +2179,6 @@ struct _defining_pci_pcix_capability {
 };
 struct _defining_pci_pm_capability {
 };
-struct __init_val_power_on_reset {
-    struct _init_val init_val;
-    struct _power_on_reset power_on_reset;
-};
-struct _poreset {
-    struct _power_on_reset power_on_reset;
-};
-struct _soft_reset_val {
-    struct _set_val set_val;
-    struct __soft_reset _soft_reset;
-    uint64 *soft_reset_val;
-};
-struct _write_only {
-    struct __qname _qname;
-    struct _read_field read_field;
-};
-struct _clear_on_read {
-    struct _get_val get_val;
-    struct _read_field read_field;
-    struct _set_val set_val;
-};
-struct _write_1_only {
-    struct __simple_write _simple_write;
-    struct _write_field write_field;
-};
-struct _write_0_only {
-    struct __simple_write _simple_write;
-    struct _write_field write_field;
-};
-struct _read_constant {
-    struct _read_field read_field;
-    uint64 *read_val;
-};
-struct _zeros {
-    struct _constant constant;
-    struct _init_val init_val;
-};
-struct _ones {
-    struct _constant constant;
-    struct _init_val init_val;
-};
-struct _ignore {
-    struct _ignore_write ignore_write;
-    struct _no_reset no_reset;
-};
-struct _reserved {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct __simple_write _simple_write;
-    struct _write_field write_field;
-    uint32 _has_logged;
-};
-struct __log_unimpl_read {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct _get_val get_val;
-    struct _read_field read_field;
-};
-struct __log_unimpl_write {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct __simple_write _simple_write;
-    struct _write_field write_field;
-};
-struct _unimpl {
-    struct __log_unimpl_read _log_unimpl_read;
-    struct __log_unimpl_write _log_unimpl_write;
-    struct _limitations limitations;
-};
-struct _read_unimpl {
-    struct __log_unimpl_read _log_unimpl_read;
-    struct _limitations limitations;
-};
-struct _write_unimpl {
-    struct __log_unimpl_write _log_unimpl_write;
-    struct _object object;
-};
-struct _silent_unimpl {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct __simple_write _simple_write;
-    struct _limitations limitations;
-    struct _read_field read_field;
-    struct _write_field write_field;
-};
-struct _undocumented {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct __simple_write _simple_write;
-    struct _read_field read_field;
-    struct _write_field write_field;
-};
-struct _design_limitation {
-    struct _limitations limitations;
-};
-struct _bank_obj {
-    struct _bank bank;
-};
-struct _map_target {
-    struct __connect _connect;
-    uint32 map_target;
-    exception_type_t (*issue)(pci_data_capture_t *arg0, map_target arg1, transaction_t *arg2, uint64 arg3);
-};
-struct _signal_port {
-};
-struct _signal_connect {
-    struct __connect _connect;
-    struct _post_init post_init;
-};
 struct _group {
     struct _object object;
 };
@@ -2399,10 +2399,6 @@ struct __devstruct_2pci_data_capture_1expansion_rom {
 struct __devstruct_2pci_data_capture_2expansion_rom_size {
     uint64 val;
 };
-struct __devstruct_2pci_data_capture_0input {
-    int len;
-    char *val;
-};
 struct __devstruct_2pci_data_capture_1pci_bus_1io_memory {
     void const  *val;
 };
@@ -2540,12 +2536,12 @@ struct __devstruct_2pci_data_capture_0regs_1buf_size {
     uint64 val;
 };
 struct __devstruct_2pci_data_capture_0regs_0buffer {
-    uint64 val[0x100LL];
+    uint64 val[0x1d588LL];
 };
 struct __devstruct_2pci_data_capture_0regs_0cmd {
     uint64 val;
 };
-struct __devstruct_2pci_data_capture_0regs_1test_register {
+struct __devstruct_2pci_data_capture_0regs_0src {
     uint64 val;
 };
 struct __devstruct_2pci_data_capture_0regs {
@@ -2559,7 +2555,15 @@ struct __devstruct_2pci_data_capture_0regs {
     struct __devstruct_2pci_data_capture_0regs_1buf_size buf_size;
     struct __devstruct_2pci_data_capture_0regs_0buffer buffer;
     struct __devstruct_2pci_data_capture_0regs_0cmd cmd;
-    struct __devstruct_2pci_data_capture_0regs_1test_register test_register;
+    struct __devstruct_2pci_data_capture_0regs_0src src;
+};
+struct __devstruct_2pci_data_capture_2target_mem_space_1memory_space {
+    void const  *val;
+};
+struct __devstruct_2pci_data_capture_2target_mem_space {
+    conf_object_t *obj;
+    char const *port;
+    struct __devstruct_2pci_data_capture_2target_mem_space_1memory_space memory_space;
 };
 struct pci_data_capture {
     conf_object_t obj;
@@ -2580,15 +2584,14 @@ struct pci_data_capture {
     dml_qname_cache_t _qname_cache;
     ht_int_table_t _subsequent_log_ht;
     uint32 _tlp_prefix;
-    FILE *file;
     struct __devstruct_2pci_data_capture_0HRESET HRESET;
     struct __devstruct_2pci_data_capture_0SRESET SRESET;
     struct __devstruct_2pci_data_capture_1expansion_rom expansion_rom;
     struct __devstruct_2pci_data_capture_2expansion_rom_size expansion_rom_size;
-    struct __devstruct_2pci_data_capture_0input input;
     struct __devstruct_2pci_data_capture_1pci_bus pci_bus;
     struct __devstruct_2pci_data_capture_1pci_config pci_config;
     struct __devstruct_2pci_data_capture_0regs regs;
+    struct __devstruct_2pci_data_capture_2target_mem_space target_mem_space;
 };
 // allows generated code to store device struct offsets in uint32,
 // which saves space

@@ -152,14 +152,12 @@ int main() {
     printf("*********************************\n");
 
     int32_t buffer, buffer_i;
-    int32_t size_file = 5000000; 
+    int32_t size_file = 120138; 
 
     buffer_i = 0x18;
     unsigned char * file=(unsigned char *) malloc(size_file);
 
 
-
-    //ioctl(fd, WR_VALUE, 0x1);
 
     for (int i=0; i<size_file; i++){
 
@@ -171,7 +169,7 @@ int main() {
 
         file[i] = buffer_char;
 
-        //printf("Read buffer pos%d: 0x%x\n", i, buffer_corrected);
+        //printf("Read buffer pos%d: %c\n", i, buffer_char);
         buffer_i += 0x1;
     }
 
