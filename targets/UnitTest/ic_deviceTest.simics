@@ -1,0 +1,22 @@
+# Setup
+$disk0_image = "./qsp-driver-support.craff"
+run-command-file targets/qsp-x86/qsp-clear-linux.simics
+@icd = SIM_create_object("ic_device", "icd", target_mem_space=conf.board.mb.phys_mem)
+instantiate-components
+
+board.mb.phys_mem.add-map icd.bank.regs  0x250000000 0xc
+icd->input = "goku.bmp"
+@print("============================Unit Tests============================")
+@print("Image Capture Device Tests:")
+@input = SIM_get_attribute(icd, "input")
+@input_result = "Correct Input: "+ input if input=="goku.bmp" else "Incorrect Input: "+ input + " Expected input: goku.bmp"
+@print(input_result)
+
+@print("")
+@print("Writing 0x2 to register cmd...")
+board.mb.phys_mem.write 0x250000004 0x02000000
+
+@cmd = SIM_read_byte(conf.board.mb.phys_mem,0x250000007)
+@CMD_result = "Read correct CMD value: "+ str(cmd) if cmd==2 else "Incorrect CMD value: "+ str(cmd) + " Expected input: 2"
+@print(CMD_result)
+

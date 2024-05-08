@@ -4500,79 +4500,80 @@ static exception_type_t _DML_M_regs__transaction_access(ic_device_t *_dev, trans
 static void  _DML_M_regs__cmd__write(ic_device_t *_dev, uint64 value)
 #line 136 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
 {
+    _DML_TM_register__set_val(_dev, UPCAST(UPCAST(((__implicit__reg_write_as_field__write) {(&_tr_regs_cmd____implicit__reg_write_as_field__write), ((_identity_t) {.id = 5, .encoded_index = 0})}), __implicit__reg_write_as_field__write, _reg_write_as_field._register), _register, set._set.set_val), value);
     uint32 v668_index UNUSED  = (uint32 )0ULL;
     SIM_LOG_INFO(4LL, _dev->regs._obj, 0LL, "cmd.write: value = %lld", value);
     if (value == 1LL)
     {
-        #line 140 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+        #line 141 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
         if (!(_dev->input.val == NULL))
-        #line 140 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+        #line 141 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
         {
             SIM_LOG_INFO(4LL, _dev->regs._obj, 0LL, "input.val = %s", _dev->input.val);
             uint64 v670_file_s UNUSED  = 0ULL;
             {
-                #line 143 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 144 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
                 _dev->file = fopen(_dev->input.val, "rb");
-                #line 143 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 144 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             }
-            #line 146 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 147 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             fseek(_dev->file, 0ULL, (int32 )2LL);
             {
-                #line 147 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 148 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
                 v670_file_s = ftell(_dev->file);
-                #line 147 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 148 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             }
             fseek(_dev->file, 0ULL, (int32 )0LL);
-            #line 150 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             SIM_LOG_INFO(4LL, _dev->regs._obj, 0LL, "file size = %lld", v670_file_s);
             {
-                #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 152 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
                 v668_index = (uint32 )0ULL;
-                #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 152 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             }
-            #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 152 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             for (; (int64 )v668_index < 0x1d588LL; (int64 )(v668_index)++)
-            #line 151 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 152 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             {
                 uint8 v675_char_read UNUSED  = fgetc(_dev->file);
                 _DML_TM_register__set_val(_dev, UPCAST(UPCAST(({uint32 __indices[] = {(int64 )v668_index}; ((__implicit__reg_write_as_field__read_only) {(&_tr_regs_buffer____implicit__reg_write_as_field__read_only), ((_identity_t) {.id = 4, .encoded_index = __indices[0]})});}), __implicit__reg_write_as_field__read_only, _reg_write_as_field._register), _register, set._set.set_val), (uint64 )v675_char_read);
                 SIM_LOG_INFO(4LL, _dev->regs._obj, 0LL, "loaded val = %llx @ buffer[%lld]", (uint64 )v675_char_read, (uint64 )v668_index);
             }
             SIM_LOG_INFO(4LL, _dev->regs._obj, 0LL, "Destination address = 0x%llx", _DML_TM_register__get_val(_dev, UPCAST(((_register) {(&_tr_regs_dest__register), ((_identity_t) {.id = 6, .encoded_index = 0})}), _register, get._get.get_val)));
-            #line 158 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 159 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             fclose(_dev->file);
-            #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 162 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             {
-                #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 162 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
                 v668_index = (uint32 )0ULL;
-                #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 162 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             }
-            #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 162 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             for (; (int64 )v668_index < 0x1d588LL; (int64 )(v668_index)++)
-            #line 161 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 162 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             {
                 uint8 v679_buf[1LL] UNUSED  = {(uint8 )(_DML_TM_register__get_val(_dev, UPCAST(UPCAST(({uint32 __indices[] = {(int64 )v668_index}; ((__implicit__reg_write_as_field__read_only) {(&_tr_regs_buffer____implicit__reg_write_as_field__read_only), ((_identity_t) {.id = 4, .encoded_index = __indices[0]})});}), __implicit__reg_write_as_field__read_only, _reg_write_as_field._register), _register, get._get.get_val)))};
                 if (_DML_M_write_mem(_dev, (_DML_TM_register__get_val(_dev, UPCAST(((_register) {(&_tr_regs_dest__register), ((_identity_t) {.id = 6, .encoded_index = 0})}), _register, get._get.get_val))) + (uint64 )v668_index, v679_buf, 1ULL))
-                #line 163 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+                #line 164 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
                 goto throw8;
                 SIM_LOG_INFO(4LL, _dev->regs._obj, 0LL, "Wrote val = %lld @ 0x%llx", _DML_TM_register__get_val(_dev, UPCAST(UPCAST(({uint32 __indices[] = {(int64 )v668_index}; ((__implicit__reg_write_as_field__read_only) {(&_tr_regs_buffer____implicit__reg_write_as_field__read_only), ((_identity_t) {.id = 4, .encoded_index = __indices[0]})});}), __implicit__reg_write_as_field__read_only, _reg_write_as_field._register), _register, get._get.get_val)), (_DML_TM_register__get_val(_dev, UPCAST(((_register) {(&_tr_regs_dest__register), ((_identity_t) {.id = 6, .encoded_index = 0})}), _register, get._get.get_val))) + (uint64 )v668_index);
             }
-            #line 167 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 168 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             if (false) throw8:
-            #line 167 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 168 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
             {
                 SIM_LOG_ERROR(_dev->regs._obj, 0LL, "IC dev memory access failed");
                 return;
             }
-            #line 172 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+            #line 173 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
         }
-        #line 140 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+        #line 141 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
     }
-    #line 175 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+    #line 176 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
     return;
-    #line 175 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
+    #line 176 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
 }
-#line 4576 "ic_device-dml.c"
+#line 4577 "ic_device-dml.c"
 
 /* write_mem */
 static bool _DML_M_write_mem(ic_device_t *_dev, physical_address_t dst, void const  *src, physical_address_t len)
@@ -4594,7 +4595,7 @@ static bool _DML_M_write_mem(ic_device_t *_dev, physical_address_t dst, void con
     return 0;
     #line 122 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
 }
-#line 4598 "ic_device-dml.c"
+#line 4599 "ic_device-dml.c"
 
 /* input.set */
 static bool _DML_M_input__set(ic_device_t *_dev, attr_value_t attr)
@@ -4605,7 +4606,7 @@ static bool _DML_M_input__set(ic_device_t *_dev, attr_value_t attr)
     return 0;
     #line 67 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
 }
-#line 4609 "ic_device-dml.c"
+#line 4610 "ic_device-dml.c"
 
 /* input.set_string */
 static void  _DML_M_input__set_string(ic_device_t *_dev, char const *ptr)
@@ -4628,7 +4629,7 @@ static void  _DML_M_input__set_string(ic_device_t *_dev, char const *ptr)
     return;
     #line 78 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
 }
-#line 4632 "ic_device-dml.c"
+#line 4633 "ic_device-dml.c"
 
 /* input.get */
 static attr_value_t _DML_M_input__get(ic_device_t *_dev)
@@ -4637,7 +4638,7 @@ static attr_value_t _DML_M_input__get(ic_device_t *_dev)
     return SIM_make_attr_string(!(_dev->input.val == NULL) ? _dev->input.val : "");
     #line 62 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/ic_device.dml"
 }
-#line 4641 "ic_device-dml.c"
+#line 4642 "ic_device-dml.c"
 
 /* post_init */
 static void  _DML_M_post_init(ic_device_t *_dev)
@@ -4647,7 +4648,7 @@ static void  _DML_M_post_init(ic_device_t *_dev)
     return;
     #line 576 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4651 "ic_device-dml.c"
+#line 4652 "ic_device-dml.c"
 
 /* init */
 static void  _DML_M_init(ic_device_t *_dev)
@@ -4657,7 +4658,7 @@ static void  _DML_M_init(ic_device_t *_dev)
     return;
     #line 575 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4661 "ic_device-dml.c"
+#line 4662 "ic_device-dml.c"
 
 /* regs.register_view_read_only.is_read_only */
 static bool _DML_M_regs__register_view_read_only__is_read_only(ic_device_t *_dev, uint32 reg)
@@ -4678,7 +4679,7 @@ static bool _DML_M_regs__register_view_read_only__is_read_only(ic_device_t *_dev
         goto throw9;
         #line 2513 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         v693_r = v695__ret__out0;
-        #line 4682 "ic_device-dml.c"
+        #line 4683 "ic_device-dml.c"
     }
     #line 2515 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (false) throw9:
@@ -4687,7 +4688,7 @@ static bool _DML_M_regs__register_view_read_only__is_read_only(ic_device_t *_dev
     #line 2518 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return VTABLE_PARAM(v693_r, struct __register, _is_read_only);
 }
-#line 4691 "ic_device-dml.c"
+#line 4692 "ic_device-dml.c"
 
 /* regs.register_view.set_register_value */
 static void  _DML_M_regs__register_view__set_register_value(ic_device_t *_dev, uint32 reg, uint64 val)
@@ -4708,7 +4709,7 @@ static void  _DML_M_regs__register_view__set_register_value(ic_device_t *_dev, u
         goto throw10;
         #line 2500 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         v697_r = v699__ret__out0;
-        #line 4712 "ic_device-dml.c"
+        #line 4713 "ic_device-dml.c"
     }
     #line 2502 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (false) throw10:
@@ -4719,7 +4720,7 @@ static void  _DML_M_regs__register_view__set_register_value(ic_device_t *_dev, u
     return;
     #line 2506 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4723 "ic_device-dml.c"
+#line 4724 "ic_device-dml.c"
 
 /* regs.register_view.register_info */
 static attr_value_t _DML_M_regs__register_view__register_info(ic_device_t *_dev, uint32 reg)
@@ -4740,7 +4741,7 @@ static attr_value_t _DML_M_regs__register_view__register_info(ic_device_t *_dev,
         goto throw11;
         #line 2450 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         v701_r = v703__ret__out0;
-        #line 4744 "ic_device-dml.c"
+        #line 4745 "ic_device-dml.c"
     }
     #line 2452 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (false) throw11:
@@ -4774,7 +4775,7 @@ static attr_value_t _DML_M_regs__register_view__register_info(ic_device_t *_dev,
                     SIM_attr_list_set_item(&v701_fields, v701_idx, v706_elem);
                     (int64 )(v701_idx)++;
                 }
-                #line 4778 "ic_device-dml.c"
+                #line 4779 "ic_device-dml.c"
             }
             #line 2459 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         }
@@ -4792,7 +4793,7 @@ static attr_value_t _DML_M_regs__register_view__register_info(ic_device_t *_dev,
     #line 2485 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return v701_ret;
 }
-#line 4796 "ic_device-dml.c"
+#line 4797 "ic_device-dml.c"
 
 /* regs.register_view.number_of_registers */
 static uint32 _DML_M_regs__register_view__number_of_registers(ic_device_t *_dev)
@@ -4800,7 +4801,7 @@ static uint32 _DML_M_regs__register_view__number_of_registers(ic_device_t *_dev)
 {
     return _DML_TM_bank___num_registers(_dev, UPCAST(((function_mapped_bank) {(&_tr_regs__function_mapped_bank), ((_identity_t) {.id = 11, .encoded_index = 0})}), function_mapped_bank, bank));
 }
-#line 4804 "ic_device-dml.c"
+#line 4805 "ic_device-dml.c"
 
 /* regs.register_view.get_register_value */
 static uint64 _DML_M_regs__register_view__get_register_value(ic_device_t *_dev, uint32 reg)
@@ -4821,7 +4822,7 @@ static uint64 _DML_M_regs__register_view__get_register_value(ic_device_t *_dev, 
         goto throw12;
         #line 2490 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         v710_r = v712__ret__out0;
-        #line 4825 "ic_device-dml.c"
+        #line 4826 "ic_device-dml.c"
     }
     #line 2492 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (false) throw12:
@@ -4830,7 +4831,7 @@ static uint64 _DML_M_regs__register_view__get_register_value(ic_device_t *_dev, 
     #line 2495 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return CALL_TRAIT_METHOD0(_get, get, _dev, UPCAST(v710_r, _register, get._get));
 }
-#line 4834 "ic_device-dml.c"
+#line 4835 "ic_device-dml.c"
 
 /* regs.register_view.description */
 static char const *_DML_M_regs__register_view__description(ic_device_t *_dev)
@@ -4839,7 +4840,7 @@ static char const *_DML_M_regs__register_view__description(ic_device_t *_dev)
     #line 2439 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return "";
 }
-#line 4843 "ic_device-dml.c"
+#line 4844 "ic_device-dml.c"
 
 /* regs.register_view.big_endian_bitorder */
 static bool _DML_M_regs__register_view__big_endian_bitorder(ic_device_t *_dev)
@@ -4847,7 +4848,7 @@ static bool _DML_M_regs__register_view__big_endian_bitorder(ic_device_t *_dev)
 {
     return 0;
 }
-#line 4851 "ic_device-dml.c"
+#line 4852 "ic_device-dml.c"
 
 /* regs.io_memory.operation */
 static exception_type_t _DML_M_regs__io_memory__operation(ic_device_t *_dev, generic_transaction_t *mem_op, map_info_t map_info)
@@ -4860,7 +4861,7 @@ static exception_type_t _DML_M_regs__io_memory__operation(ic_device_t *_dev, gen
     return (int32 )0x407LL;
     #line 1537 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4864 "ic_device-dml.c"
+#line 4865 "ic_device-dml.c"
 
 /* regs.instrumentation_order.move_before */
 static bool _DML_M_regs__instrumentation_order__move_before(ic_device_t *_dev, conf_object_t *connection, conf_object_t *before)
@@ -4868,7 +4869,7 @@ static bool _DML_M_regs__instrumentation_order__move_before(ic_device_t *_dev, c
 {
     return _move_before(connection, before, &_dev->regs._connections);
 }
-#line 4872 "ic_device-dml.c"
+#line 4873 "ic_device-dml.c"
 
 /* regs.instrumentation_order.get_connections */
 static attr_value_t _DML_M_regs__instrumentation_order__get_connections(ic_device_t *_dev)
@@ -4876,7 +4877,7 @@ static attr_value_t _DML_M_regs__instrumentation_order__get_connections(ic_devic
 {
     return _get_connections(&_dev->regs._connections);
 }
-#line 4880 "ic_device-dml.c"
+#line 4881 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.remove_connection_callbacks */
 static void  _DML_M_regs__bank_instrumentation_subscribe__remove_connection_callbacks(ic_device_t *_dev, conf_object_t *connection)
@@ -4887,7 +4888,7 @@ static void  _DML_M_regs__bank_instrumentation_subscribe__remove_connection_call
     return;
     #line 2584 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4891 "ic_device-dml.c"
+#line 4892 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.remove_callback */
 static void  _DML_M_regs__bank_instrumentation_subscribe__remove_callback(ic_device_t *_dev, bank_callback_handle_t callback)
@@ -4898,7 +4899,7 @@ static void  _DML_M_regs__bank_instrumentation_subscribe__remove_callback(ic_dev
     return;
     #line 2579 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4902 "ic_device-dml.c"
+#line 4903 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.register_before_write */
 static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__register_before_write(ic_device_t *_dev, conf_object_t *connection, uint64 offset, uint64 size, before_write_callback_t before_write, void  *user_data)
@@ -4907,7 +4908,7 @@ static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__regis
     return _register_before_write(_DML_TM_bank___bank_obj(_dev, UPCAST(((function_mapped_bank) {(&_tr_regs__function_mapped_bank), ((_identity_t) {.id = 11, .encoded_index = 0})}), function_mapped_bank, bank)), connection, offset, size, before_write, user_data, &_dev->regs._connections, &_dev->regs._before_write_callbacks);
     #line 2560 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4911 "ic_device-dml.c"
+#line 4912 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.register_before_read */
 static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__register_before_read(ic_device_t *_dev, conf_object_t *connection, uint64 offset, uint64 size, before_read_callback_t before_read, void  *user_data)
@@ -4916,7 +4917,7 @@ static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__regis
     return _register_before_read(_DML_TM_bank___bank_obj(_dev, UPCAST(((function_mapped_bank) {(&_tr_regs__function_mapped_bank), ((_identity_t) {.id = 11, .encoded_index = 0})}), function_mapped_bank, bank)), connection, offset, size, before_read, user_data, &_dev->regs._connections, &_dev->regs._before_read_callbacks);
     #line 2537 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4920 "ic_device-dml.c"
+#line 4921 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.register_after_write */
 static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__register_after_write(ic_device_t *_dev, conf_object_t *connection, uint64 offset, uint64 size, after_write_callback_t after_write, void  *user_data)
@@ -4925,7 +4926,7 @@ static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__regis
     return _register_after_write(_DML_TM_bank___bank_obj(_dev, UPCAST(((function_mapped_bank) {(&_tr_regs__function_mapped_bank), ((_identity_t) {.id = 11, .encoded_index = 0})}), function_mapped_bank, bank)), connection, offset, size, after_write, user_data, &_dev->regs._connections, &_dev->regs._after_write_callbacks);
     #line 2571 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4929 "ic_device-dml.c"
+#line 4930 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.register_after_read */
 static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__register_after_read(ic_device_t *_dev, conf_object_t *connection, uint64 offset, uint64 size, after_read_callback_t after_read, void  *user_data)
@@ -4934,7 +4935,7 @@ static bank_callback_handle_t _DML_M_regs__bank_instrumentation_subscribe__regis
     return _register_after_read(_DML_TM_bank___bank_obj(_dev, UPCAST(((function_mapped_bank) {(&_tr_regs__function_mapped_bank), ((_identity_t) {.id = 11, .encoded_index = 0})}), function_mapped_bank, bank)), connection, offset, size, after_read, user_data, &_dev->regs._connections, &_dev->regs._after_read_callbacks);
     #line 2548 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4938 "ic_device-dml.c"
+#line 4939 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.enable_connection_callbacks */
 static void  _DML_M_regs__bank_instrumentation_subscribe__enable_connection_callbacks(ic_device_t *_dev, conf_object_t *connection)
@@ -4944,7 +4945,7 @@ static void  _DML_M_regs__bank_instrumentation_subscribe__enable_connection_call
     return;
     #line 2587 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4948 "ic_device-dml.c"
+#line 4949 "ic_device-dml.c"
 
 /* regs.bank_instrumentation_subscribe.disable_connection_callbacks */
 static void  _DML_M_regs__bank_instrumentation_subscribe__disable_connection_callbacks(ic_device_t *_dev, conf_object_t *connection)
@@ -4954,7 +4955,7 @@ static void  _DML_M_regs__bank_instrumentation_subscribe__disable_connection_cal
     return;
     #line 2590 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4958 "ic_device-dml.c"
+#line 4959 "ic_device-dml.c"
 
 /* _register_all_attributes */
 static void  _DML_M__register_all_attributes()
@@ -4965,7 +4966,7 @@ static void  _DML_M__register_all_attributes()
     return;
     #line 1049 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4969 "ic_device-dml.c"
+#line 4970 "ic_device-dml.c"
 
 /* _set_attribute_attr_portobj_trampoline */
 static set_error_t _DML_M__set_attribute_attr_portobj_trampoline(void  *_info, conf_object_t *_portobj, attr_value_t *val, attr_value_t *_idx)
@@ -4996,7 +4997,7 @@ static set_error_t _DML_M__set_attribute_attr_portobj_trampoline(void  *_info, c
     return (&_trampoline_DML_M__set_attribute_attr)(v731_portobj->dev, _info, (uint32 )v731_portobj->ndims, v731_flat_index_offset, val);
     #line 956 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 5000 "ic_device-dml.c"
+#line 5001 "ic_device-dml.c"
 
 /* _set_attribute_attr */
 static set_error_t _DML_M__set_attribute_attr(ic_device_t *_dev, _dml_attr_getset_info_t const *_conf_info, uint32 start_dim, uint32 flat_index_offset, attr_value_t *val)
@@ -5150,7 +5151,7 @@ static set_error_t _DML_M__set_attribute_attr(ic_device_t *_dev, _dml_attr_getse
     MM_FREE(v736_items);
     return (int32 )0LL;
 }
-#line 5154 "ic_device-dml.c"
+#line 5155 "ic_device-dml.c"
 
 /* _get_attribute_attr_portobj_trampoline */
 static attr_value_t _DML_M__get_attribute_attr_portobj_trampoline(void  *_info, conf_object_t *_portobj, attr_value_t *_idx)
@@ -5181,7 +5182,7 @@ static attr_value_t _DML_M__get_attribute_attr_portobj_trampoline(void  *_info, 
     return (&_trampoline_DML_M__get_attribute_attr)(v762_portobj->dev, _info, (uint32 )v762_portobj->ndims, v762_flat_index_offset);
     #line 889 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 5185 "ic_device-dml.c"
+#line 5186 "ic_device-dml.c"
 
 /* _get_attribute_attr */
 static attr_value_t _DML_M__get_attribute_attr(ic_device_t *_dev, _dml_attr_getset_info_t const *_conf_info, uint32 start_dim, uint32 flat_index_offset)
@@ -5301,7 +5302,7 @@ static attr_value_t _DML_M__get_attribute_attr(ic_device_t *_dev, _dml_attr_gets
     MM_FREE(v767_items_buf);
     return v767_to_ret;
 }
-#line 5305 "ic_device-dml.c"
+#line 5306 "ic_device-dml.c"
 
 /* _set_attribute_attr_trampoline */
 static set_error_t _DML_M__set_attribute_attr_trampoline(void  *info, conf_object_t *obj, attr_value_t *val, attr_value_t *_idx)
@@ -5309,7 +5310,7 @@ static set_error_t _DML_M__set_attribute_attr_trampoline(void  *info, conf_objec
 {
     return (&_trampoline_DML_M__set_attribute_attr)(obj, info, (uint32 )0ULL, (uint32 )0ULL, val);
 }
-#line 5313 "ic_device-dml.c"
+#line 5314 "ic_device-dml.c"
 
 /* _get_attribute_attr_trampoline */
 static attr_value_t _DML_M__get_attribute_attr_trampoline(void  *info, conf_object_t *obj, attr_value_t *_idx)
@@ -5317,7 +5318,7 @@ static attr_value_t _DML_M__get_attribute_attr_trampoline(void  *info, conf_obje
 {
     return (&_trampoline_DML_M__get_attribute_attr)(obj, info, (uint32 )0ULL, (uint32 )0ULL);
 }
-#line 5321 "ic_device-dml.c"
+#line 5322 "ic_device-dml.c"
 
 /* _get_attribute_info */
 static _dml_attr_conf_info_t _DML_M__get_attribute_info(_conf_attribute attr)
@@ -5326,7 +5327,7 @@ static _dml_attr_conf_info_t _DML_M__get_attribute_info(_conf_attribute attr)
     return (_dml_attr_conf_info_t ) {.name=VTABLE_PARAM(attr, struct __conf_attribute, _attr_name), .type=VTABLE_PARAM(attr, struct __conf_attribute, _attr_type), .doc=VTABLE_PARAM(attr, struct __conf_attribute, _documentation), .parent_obj_class=!(VTABLE_PARAM(attr, struct __conf_attribute, _parent_obj_class) == NULL) ? *VTABLE_PARAM(attr, struct __conf_attribute, _parent_obj_class) : NULL, .proxy_info=VTABLE_PARAM(attr, struct __conf_attribute, _parent_obj_proxy_info), .flags=VTABLE_PARAM(attr, struct __conf_attribute, _flags), .object_relative_dims=VTABLE_PARAM(attr, struct __conf_attribute, _object_relative_dims), .readable=VTABLE_PARAM(attr, struct __conf_attribute, readable), .writable=VTABLE_PARAM(attr, struct __conf_attribute, writable), .should_be_registered=VTABLE_PARAM(attr, struct __conf_attribute, _should_be_registered), .allow_cutoff=VTABLE_PARAM(attr, struct __conf_attribute, _attr_allow_cutoff)};
     #line 852 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 5330 "ic_device-dml.c"
+#line 5331 "ic_device-dml.c"
 
 conf_class_t *
 _initialize_ic_device_dml(void)

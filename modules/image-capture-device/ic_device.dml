@@ -134,6 +134,7 @@ bank regs is function_mapped_bank {
 
         //called on write by the processor
         method write(uint64 value) {
+            cmd.set_val(value);
             local uint32 index = 0;
             log info, 4: "cmd.write: value = %d", value;
             if (value == 0x1) {
