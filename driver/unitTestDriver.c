@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include "unity.h"
+#include "minunit.h"
 #include <sys/ioctl.h>
 
 #define CHARACTER_DEVICE_DRIVER_PATH "/dev/pci_capture_chr_dev-0"
@@ -15,7 +15,7 @@
 
 
 
-void test_read(){
+int32_t test_read(){
     
     int fd;
     const char *chr_dev_name = CHARACTER_DEVICE_DRIVER_PATH;
@@ -36,6 +36,8 @@ void test_read(){
     printf(" >>> Closing character device\n");
     printf("*********************************\n");
     close(fd);
+
+    return buffer;
 
 }
 
@@ -63,12 +65,20 @@ void test_write(){
 
 }
 
+MU_TEST(test_read_after_write) {
+    mu_assert_int_eq(0x0, test_read(0x0));
+}
+
+
+MU_TEST_SUITE(test_suite) {
+    MU_RUN_TEST(test_read_after_write);
+}
+
 
 int main()
 {
-    test_write();
-    UNITY_BEGIN();
-    RUN_TEST(test_read);
-    return UNITY_END();
+    MU_RUN_SUITE(test_suite);
+    MU_REPORT();
+    return MU_EXIT_CODE;
     
 }
