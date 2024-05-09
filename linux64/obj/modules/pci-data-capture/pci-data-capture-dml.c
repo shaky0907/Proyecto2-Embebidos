@@ -1154,7 +1154,7 @@ static const _id_info_t _id_infos[97] UNUSED = {
     {"target_mem_space", NULL, 0, 97}
 };
 static ht_str_table_t _id_info_ht UNUSED = HT_STR_NULL(false);
-static void * const _object_vtables[97] UNUSED = {(&_tr__dev__device.object), (&_tr_HRESET_signal__implement.object), (&_tr_HRESET__port.object), (&_tr_SRESET_signal__implement.object), (&_tr_SRESET__port.object), (&_tr_config_registers__read_only_attr.pseudo_attr.attribute._conf_attribute.object), (&_tr_expansion_rom_rom__interface.object), (&_tr_expansion_rom__connect._conf_attribute.object), (&_tr_expansion_rom_size__uint64_attr.attribute._conf_attribute.object), (&_tr_io_memory__implement.object), (&_tr_is_pcie_device__read_only_attr.pseudo_attr.attribute._conf_attribute.object), (&_tr_pci_bus_io_memory__interface.object), (&_tr_pci_bus_pci_bus__interface.object), (&_tr_pci_bus_pci_upstream_operation__interface.object), (&_tr_pci_bus__connect._conf_attribute.object), (&_tr_pci_config_bank_instrumentation_subscribe__implement.object), (&_tr_pci_config_base_address_0_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write.field.object), (&_tr_pci_config_base_address_0_p____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_base_address_0_s____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_base_address_0_type____implicit__init_val_hard_reset___init_val_soft_reset___set_field___write_field__field__ignore_write.field.object), (&_tr_pci_config_base_address_0____implicit__init_val_hard_reset___init_val_soft_reset__memory_base_address_32.memory_base_address_32.memory_base_address_generic.base_address._register._conf_attribute.object), (&_tr_pci_config_base_address_1_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_1____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_2_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_2____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_3_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_3____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_4_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_4____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_5_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_5____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_bist____implicit__init_val_hard_reset___init_val_soft_reset___reg_read_as_field___reg_write_as_field__read_zero__write._reg_read_as_field._register._conf_attribute.object), (&_tr_pci_config_bus_address____implicit__init_val_hard_reset___init_val_soft_reset__unmapped.unmapped._register._conf_attribute.object), (&_tr_pci_config_cache_line_size____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_capabilities_ptr____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__constant._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_cardbus_cis_ptr____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_class_code____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_command_fb____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_id____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_io____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_m____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_mem____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_mwi____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_pe____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_sc____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_se____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_vga____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_wc____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_device_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_expansion_rom_base_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write.field.object), (&_tr_pci_config_expansion_rom_base_e____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write.field.object), (&_tr_pci_config_expansion_rom_base____implicit__init_val_hard_reset___init_val_soft_reset__base_address.base_address._register._conf_attribute.object), (&_tr_pci_config_header_type_mf____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_header_type_type____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_header_type____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_instrumentation_order__implement.object), (&_tr_pci_config_interrupt_line____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_interrupt_pin____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_interrupts____implicit__init_val_hard_reset___init_val_soft_reset__unmapped.unmapped._register._conf_attribute.object), (&_tr_pci_config_io_memory__bank_io_memory.implement.object), (&_tr_pci_config_latency_timer____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_max_lat____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_min_gnt____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_register_view__implement.object), (&_tr_pci_config_register_view_read_only__implement.object), (&_tr_pci_config_revision_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_status_c____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_dpe____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_ds____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_fbb____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_ins____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_ir____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_mhz____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_pe____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_rma____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_rta____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_ssa____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_sta____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_subsystem_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config__pci_config_type_0.pci_config_generic._pci_config_generic.miss_pattern_bank.bank.object), (&_tr_pci_device__implement.object), (&_tr_regs_bank_instrumentation_subscribe__implement.object), (&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only._reg_write_as_field._register._conf_attribute.object), (&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute.object), (&_tr_regs_instrumentation_order__implement.object), (&_tr_regs_io_memory__bank_io_memory.implement.object), (&_tr_regs_register_view__implement.object), (&_tr_regs_register_view_read_only__implement.object), (&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute.object), (&_tr_regs__function_mapped_bank.bank.object), (&_tr_target_mem_space_memory_space__interface.object), (&_tr_target_mem_space__connect._conf_attribute.object)};
+static void * const _object_vtables[97] UNUSED = {(&_tr__dev__device.object), (&_tr_HRESET_signal__implement.object), (&_tr_HRESET__port.object), (&_tr_SRESET_signal__implement.object), (&_tr_SRESET__port.object), (&_tr_config_registers__read_only_attr.pseudo_attr.attribute._conf_attribute.object), (&_tr_expansion_rom_rom__interface.object), (&_tr_expansion_rom__connect._conf_attribute.object), (&_tr_expansion_rom_size__uint64_attr.attribute._conf_attribute.object), (&_tr_io_memory__implement.object), (&_tr_is_pcie_device__read_only_attr.pseudo_attr.attribute._conf_attribute.object), (&_tr_pci_bus_io_memory__interface.object), (&_tr_pci_bus_pci_bus__interface.object), (&_tr_pci_bus_pci_upstream_operation__interface.object), (&_tr_pci_bus__connect._conf_attribute.object), (&_tr_pci_config_bank_instrumentation_subscribe__implement.object), (&_tr_pci_config_base_address_0_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write.field.object), (&_tr_pci_config_base_address_0_p____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_base_address_0_s____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_base_address_0_type____implicit__init_val_hard_reset___init_val_soft_reset___set_field___write_field__field__ignore_write.field.object), (&_tr_pci_config_base_address_0____implicit__init_val_hard_reset___init_val_soft_reset__memory_base_address_32.memory_base_address_32.memory_base_address_generic.base_address._register._conf_attribute.object), (&_tr_pci_config_base_address_1_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_1____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_2_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_2____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_3_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_3____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_4_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_4____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_base_address_5_ignore____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant.field.object), (&_tr_pci_config_base_address_5____implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32.no_base_address_32._register._conf_attribute.object), (&_tr_pci_config_bist____implicit__init_val_hard_reset___init_val_soft_reset___reg_read_as_field___reg_write_as_field__read_zero__write._reg_read_as_field._register._conf_attribute.object), (&_tr_pci_config_bus_address____implicit__init_val_hard_reset___init_val_soft_reset__unmapped.unmapped._register._conf_attribute.object), (&_tr_pci_config_cache_line_size____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_capabilities_ptr____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__constant._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_cardbus_cis_ptr____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_class_code____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_command_fb____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_id____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_io____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_m____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_mem____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write.field.object), (&_tr_pci_config_command_mwi____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_pe____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_sc____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_se____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_vga____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command_wc____implicit__init_val_hard_reset___init_val_soft_reset__field.field.object), (&_tr_pci_config_command____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_device_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_expansion_rom_base_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write.field.object), (&_tr_pci_config_expansion_rom_base_e____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write.field.object), (&_tr_pci_config_expansion_rom_base____implicit__init_val_hard_reset___init_val_soft_reset__base_address.base_address._register._conf_attribute.object), (&_tr_pci_config_header_type_mf____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_header_type_type____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_header_type____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_instrumentation_order__implement.object), (&_tr_pci_config_interrupt_line____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_interrupt_pin____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_interrupts____implicit__init_val_hard_reset___init_val_soft_reset__unmapped.unmapped._register._conf_attribute.object), (&_tr_pci_config_io_memory__bank_io_memory.implement.object), (&_tr_pci_config_latency_timer____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_max_lat____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_min_gnt____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_register_view__implement.object), (&_tr_pci_config_register_view_read_only__implement.object), (&_tr_pci_config_revision_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_status_c____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_dpe____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_ds____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_fbb____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_ins____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_ir____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_mhz____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write.field.object), (&_tr_pci_config_status_pe____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_rma____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_rta____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_ssa____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status_sta____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears.field.object), (&_tr_pci_config_status____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_pci_config_subsystem_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute.object), (&_tr_pci_config__pci_config_type_0.pci_config_generic._pci_config_generic.miss_pattern_bank.bank.object), (&_tr_pci_device__implement.object), (&_tr_regs_bank_instrumentation_subscribe__implement.object), (&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute.object), (&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute.object), (&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute.object), (&_tr_regs_instrumentation_order__implement.object), (&_tr_regs_io_memory__bank_io_memory.implement.object), (&_tr_regs_register_view__implement.object), (&_tr_regs_register_view_read_only__implement.object), (&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute.object), (&_tr_regs__function_mapped_bank.bank.object), (&_tr_target_mem_space_memory_space__interface.object), (&_tr_target_mem_space__connect._conf_attribute.object)};
 static const _dml_port_object_assoc_t _port_object_assocs[97] UNUSED = {{0, 0}, {offsetof(pci_data_capture_t, HRESET._obj), 1}, {offsetof(pci_data_capture_t, HRESET._obj), 1}, {offsetof(pci_data_capture_t, SRESET._obj), 1}, {offsetof(pci_data_capture_t, SRESET._obj), 1}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {offsetof(pci_data_capture_t, pci_config._obj), 1}, {0, 0}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 120200}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {offsetof(pci_data_capture_t, regs._obj), 1}, {0, 0}, {0, 0}};
 static void _startup_calls(void)
 {
@@ -3426,44 +3426,23 @@ static void  _DML_TM_register___default_set(pci_data_capture_t *_dev, set_val _s
     #line 3093 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
 #line 3429 "pci-data-capture-dml.c"
-/* read_only.write_field */
-static void  _DML_TM_read_only__write_field(pci_data_capture_t *_dev, write_field _write_field, uint64 val, uint64 enabled_bits, void  *aux)
-#line 435 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-{
-    #line 3434 "pci-data-capture-dml.c"
-    read_only _read_only UNUSED = DOWNCAST(_write_field, read_only, write_field);
-    #line 436 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-    if (VTABLE_PARAM(UPCAST(_read_only, read_only, _reg_or_field), struct __reg_or_field, is_register) || !(((val) & (enabled_bits)) == ((CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(_read_only, read_only, get_val))) & (enabled_bits))))
-    #line 438 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-    {
-        #line 438 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-        uint64 _calculated_level = _select_log_level(&(_dev->_subsequent_log_ht), _identity_to_key((_read_only).id), 1ULL, 1ULL, 2ULL);
-        #line 438 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-        SIM_LOG_SPEC_VIOLATION(_calculated_level, &_dev->obj, _dml_loggroup_Register_Write, "Write to read-only %s %s (value written = %#llx, contents = %#llx).", VTABLE_PARAM(UPCAST(_read_only, read_only, _reg_or_field), struct __reg_or_field, is_register) ? "register" : "field", _DML_TM__qname___qname(_dev, UPCAST(_read_only, read_only, _qname)), val, CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(_read_only, read_only, get_val)));
-        #line 3444 "pci-data-capture-dml.c"
-    }
-    #line 444 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-    return;
-    #line 444 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-}
-#line 3450 "pci-data-capture-dml.c"
 /* write.write_field */
 static void  _DML_TM_write__write_field(pci_data_capture_t *_dev, write_field _write_field, uint64 val, uint64 enabled_bits, void  *aux)
 #line 3524 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3455 "pci-data-capture-dml.c"
+    #line 3434 "pci-data-capture-dml.c"
     __write ___write UNUSED = DOWNCAST(_write_field, __write, write_field);
     #line 3525 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (!(enabled_bits == 0LL))
     #line 3525 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     {
-        uint64 v424_patched UNUSED  = (CALL_TRAIT_METHOD0(_get, get, _dev, UPCAST(___write, __write, _get))) & (~enabled_bits);
-        CALL_TRAIT_METHOD(__write, write, _dev, ___write, (v424_patched) | ((val) & (enabled_bits)));
+        uint64 v421_patched UNUSED  = (CALL_TRAIT_METHOD0(_get, get, _dev, UPCAST(___write, __write, _get))) & (~enabled_bits);
+        CALL_TRAIT_METHOD(__write, write, _dev, ___write, (v421_patched) | ((val) & (enabled_bits)));
     }
     return;
     #line 3529 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3467 "pci-data-capture-dml.c"
+#line 3446 "pci-data-capture-dml.c"
 /* write.write */
 static void  _DML_TM_write__write(pci_data_capture_t *_dev, __write ___write, uint64 val)
 #line 3531 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
@@ -3472,29 +3451,29 @@ static void  _DML_TM_write__write(pci_data_capture_t *_dev, __write ___write, ui
     return;
     #line 3533 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3476 "pci-data-capture-dml.c"
+#line 3455 "pci-data-capture-dml.c"
 /* connect.validate */
 static bool _DML_TM_connect__validate(pci_data_capture_t *_dev, _connect __connect, conf_object_t *obj)
 #line 1273 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
     return 1;
 }
-#line 3483 "pci-data-capture-dml.c"
+#line 3462 "pci-data-capture-dml.c"
 /* connect.set_attribute */
 static set_error_t _DML_TM_connect__set_attribute(pci_data_capture_t *_dev, _conf_attribute __conf_attribute, attr_value_t value)
 #line 1293 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3488 "pci-data-capture-dml.c"
+    #line 3467 "pci-data-capture-dml.c"
     _connect __connect UNUSED = DOWNCAST(__conf_attribute, _connect, _conf_attribute);
     #line 1293 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     {
-        conf_object_t *v430_obj UNUSED  = NULL;
-        char const *v430_port UNUSED  = NULL;
+        conf_object_t *v427_obj UNUSED  = NULL;
+        char const *v427_port UNUSED  = NULL;
         #line 1298 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         if (SIM_attr_is_object(value))
         {
             #line 1299 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-            v430_obj = SIM_attr_object(value);
+            v427_obj = SIM_attr_object(value);
             #line 1299 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         }
         else
@@ -3504,24 +3483,24 @@ static set_error_t _DML_TM_connect__set_attribute(pci_data_capture_t *_dev, _con
         {
             {
                 #line 1301 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                v430_obj = SIM_attr_object(SIM_attr_list_item(value, (uint32 )0ULL));
+                v427_obj = SIM_attr_object(SIM_attr_list_item(value, (uint32 )0ULL));
                 #line 1301 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             }
             {
                 #line 1302 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                v430_port = SIM_attr_string(SIM_attr_list_item(value, (uint32 )1ULL));
+                v427_port = SIM_attr_string(SIM_attr_list_item(value, (uint32 )1ULL));
                 #line 1302 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             }
         }
         #line 1306 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-        if (v430_obj == *(VTABLE_SESSION(_dev, __connect, struct __connect, obj, conf_object_t **)) && (*(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) == NULL ? v430_port == NULL : !(v430_port == NULL) && (int64 )strcmp(v430_port, *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **))) == 0LL))
+        if (v427_obj == *(VTABLE_SESSION(_dev, __connect, struct __connect, obj, conf_object_t **)) && (*(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) == NULL ? v427_port == NULL : !(v427_port == NULL) && (int64 )strcmp(v427_port, *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **))) == 0LL))
         #line 1309 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         return (int32 )0LL;
         #line 1312 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-        if (!(v430_obj == NULL))
+        if (!(v427_obj == NULL))
         #line 1312 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         {
-            bool v435_valid UNUSED  = 1;
+            bool v432_valid UNUSED  = 1;
             {
                 #line 1314 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
                 _each_in_t __each_in_expr = _vtable_sequence_param(__connect, offsetof(struct __connect, _each_interface));
@@ -3538,48 +3517,48 @@ static set_error_t _DML_TM_connect__set_attribute(pci_data_capture_t *_dev, _con
                     #line 1314 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
                     {
                         #line 1314 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                        _interface v436_iface UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
-                        if (VTABLE_PARAM(v436_iface, struct __interface, _required))
+                        _interface v433_iface UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                        if (VTABLE_PARAM(v433_iface, struct __interface, _required))
                         {
                             #line 1316 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                            if (SIM_c_get_port_interface(v430_obj, VTABLE_PARAM(UPCAST(v436_iface, _interface, object.name), struct _name, name), v430_port) == NULL)
+                            if (SIM_c_get_port_interface(v427_obj, VTABLE_PARAM(UPCAST(v433_iface, _interface, object.name), struct _name, name), v427_port) == NULL)
                             {
-                                if (!(v430_port == NULL))
+                                if (!(v427_port == NULL))
                                 #line 1322 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                                SIM_c_attribute_error("Interface '%s' not found for port '%s' in object '%s'", VTABLE_PARAM(UPCAST(v436_iface, _interface, object.name), struct _name, name), v430_port, SIM_object_name(v430_obj));
+                                SIM_c_attribute_error("Interface '%s' not found for port '%s' in object '%s'", VTABLE_PARAM(UPCAST(v433_iface, _interface, object.name), struct _name, name), v427_port, SIM_object_name(v427_obj));
                                 else
                                 #line 1327 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                                SIM_c_attribute_error("The %s object does not implement the required %s interface", SIM_object_name(v430_obj), VTABLE_PARAM(UPCAST(v436_iface, _interface, object.name), struct _name, name));
+                                SIM_c_attribute_error("The %s object does not implement the required %s interface", SIM_object_name(v427_obj), VTABLE_PARAM(UPCAST(v433_iface, _interface, object.name), struct _name, name));
                                 {
                                     #line 1328 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                                    v435_valid = 0;
+                                    v432_valid = 0;
                                     #line 1328 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
                                 }
                             }
                             #line 1316 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
                         }
-                        #line 3562 "pci-data-capture-dml.c"
+                        #line 3541 "pci-data-capture-dml.c"
                     }
                     #line 1314 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
                 }
                 #line 1314 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             }
             #line 1332 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-            if (!v435_valid)
+            if (!v432_valid)
             return (int32 )2LL;
-            char const *v435_old_port UNUSED  = *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **));
+            char const *v432_old_port UNUSED  = *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **));
             {
                 #line 1335 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) = v430_port;
+                *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) = v427_port;
                 #line 1335 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             }
-            bool v435_ok UNUSED  = CALL_TRAIT_METHOD(_connect, validate, _dev, __connect, v430_obj);
+            bool v432_ok UNUSED  = CALL_TRAIT_METHOD(_connect, validate, _dev, __connect, v427_obj);
             {
                 #line 1337 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) = v435_old_port;
+                *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) = v432_old_port;
                 #line 1337 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             }
-            if (!v435_ok)
+            if (!v432_ok)
             return (int32 )3LL;
             #line 1341 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         }
@@ -3588,17 +3567,17 @@ static set_error_t _DML_TM_connect__set_attribute(pci_data_capture_t *_dev, _con
         MM_FREE((void  *)*(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)));
         {
             #line 1346 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-            *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) = !(v430_port == NULL) ? MM_STRDUP(v430_port) : NULL;
+            *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) = !(v427_port == NULL) ? MM_STRDUP(v427_port) : NULL;
             #line 1346 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         }
         #line 1348 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-        CALL_TRAIT_METHOD(_connect, set, _dev, __connect, v430_obj);
+        CALL_TRAIT_METHOD(_connect, set, _dev, __connect, v427_obj);
         return (int32 )0LL;
-        #line 3598 "pci-data-capture-dml.c"
+        #line 3577 "pci-data-capture-dml.c"
     }
     #line 1350 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3602 "pci-data-capture-dml.c"
+#line 3581 "pci-data-capture-dml.c"
 /* connect.set */
 static void  _DML_TM_connect__set(pci_data_capture_t *_dev, _connect __connect, conf_object_t *obj)
 #line 1352 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
@@ -3624,13 +3603,13 @@ static void  _DML_TM_connect__set(pci_data_capture_t *_dev, _connect __connect, 
             #line 1354 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             {
                 #line 1354 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                _interface v448_iface UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                _interface v445_iface UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
                 {
                     #line 1355 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                    *(VTABLE_SESSION(_dev, v448_iface, struct __interface, val, void const  **)) = obj == NULL ? NULL : SIM_c_get_port_interface(obj, VTABLE_PARAM(UPCAST(v448_iface, _interface, object.name), struct _name, name), *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)));
+                    *(VTABLE_SESSION(_dev, v445_iface, struct __interface, val, void const  **)) = obj == NULL ? NULL : SIM_c_get_port_interface(obj, VTABLE_PARAM(UPCAST(v445_iface, _interface, object.name), struct _name, name), *(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)));
                     #line 1355 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
                 }
-                #line 3634 "pci-data-capture-dml.c"
+                #line 3613 "pci-data-capture-dml.c"
             }
             #line 1354 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         }
@@ -3640,12 +3619,12 @@ static void  _DML_TM_connect__set(pci_data_capture_t *_dev, _connect __connect, 
     return;
     #line 1358 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3644 "pci-data-capture-dml.c"
+#line 3623 "pci-data-capture-dml.c"
 /* connect.get_attribute */
 static attr_value_t _DML_TM_connect__get_attribute(pci_data_capture_t *_dev, _conf_attribute __conf_attribute)
 #line 1360 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3649 "pci-data-capture-dml.c"
+    #line 3628 "pci-data-capture-dml.c"
     _connect __connect UNUSED = DOWNCAST(__conf_attribute, _connect, _conf_attribute);
     #line 1361 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (!(*(VTABLE_SESSION(_dev, __connect, struct __connect, port, char const **)) == NULL))
@@ -3654,22 +3633,22 @@ static attr_value_t _DML_TM_connect__get_attribute(pci_data_capture_t *_dev, _co
     else
     return SIM_make_attr_object(*(VTABLE_SESSION(_dev, __connect, struct __connect, obj, conf_object_t **)));
 }
-#line 3658 "pci-data-capture-dml.c"
+#line 3637 "pci-data-capture-dml.c"
 /* field.get_val */
 static uint64 _DML_TM_field__get_val(pci_data_capture_t *_dev, get_val _get_val)
 #line 3171 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3663 "pci-data-capture-dml.c"
+    #line 3642 "pci-data-capture-dml.c"
     field _field UNUSED = DOWNCAST(_get_val, field, _get.get_val);
     #line 3172 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return (DML_shru(*(VTABLE_SESSION(_dev, VTABLE_PARAM(_field, struct _field, reg), struct __register, val, uint64 *)), (uint64 )VTABLE_PARAM(UPCAST(_field, field, _lsb), struct __lsb, lsb))) & ((uint64 )(DML_shl(1LL, (int64 )(((((uint64 )VTABLE_PARAM(UPCAST(_field, field, _lsb), struct __lsb, lsb) + (uint64 )VTABLE_PARAM(UPCAST(_field, field, _bitsize), struct __bitsize, bitsize)) - 1ULL) - (uint64 )VTABLE_PARAM(UPCAST(_field, field, _lsb), struct __lsb, lsb)) + 1ULL), "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml", 3172)) - 1ULL);
 }
-#line 3668 "pci-data-capture-dml.c"
+#line 3647 "pci-data-capture-dml.c"
 /* field.set_val */
 static void  _DML_TM_field__set_val(pci_data_capture_t *_dev, set_val _set_val, uint64 val)
 #line 3175 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3673 "pci-data-capture-dml.c"
+    #line 3652 "pci-data-capture-dml.c"
     field _field UNUSED = DOWNCAST(_set_val, field, _set.set_val);
     #line 3176 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     {
@@ -3680,41 +3659,41 @@ static void  _DML_TM_field__set_val(pci_data_capture_t *_dev, set_val _set_val, 
     return;
     #line 3177 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3684 "pci-data-capture-dml.c"
+#line 3663 "pci-data-capture-dml.c"
 /* field._default_get */
 static uint64 _DML_TM_field___default_get(pci_data_capture_t *_dev, get_val _get_val)
 #line 3179 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3689 "pci-data-capture-dml.c"
+    #line 3668 "pci-data-capture-dml.c"
     field _field UNUSED = DOWNCAST(_get_val, field, _get.get_val);
     #line 3180 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return _DML_TM_field__get_val(_dev, UPCAST(_field, field, _get.get_val));
 }
-#line 3694 "pci-data-capture-dml.c"
+#line 3673 "pci-data-capture-dml.c"
 /* field._default_set */
 static void  _DML_TM_field___default_set(pci_data_capture_t *_dev, set_val _set_val, uint64 value)
 #line 3182 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3699 "pci-data-capture-dml.c"
+    #line 3678 "pci-data-capture-dml.c"
     field _field UNUSED = DOWNCAST(_set_val, field, _set.set_val);
     #line 3183 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     _DML_TM_field__set_val(_dev, UPCAST(_field, field, _set.set_val), value);
     return;
     #line 3184 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3706 "pci-data-capture-dml.c"
+#line 3685 "pci-data-capture-dml.c"
 /* field._default_init */
 static void  _DML_TM_field___default_init(pci_data_capture_t *_dev, init_val _init_val)
 #line 3186 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3711 "pci-data-capture-dml.c"
+    #line 3690 "pci-data-capture-dml.c"
     field _field UNUSED = DOWNCAST(_init_val, field, init_val);
     #line 3187 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     _DML_TM_field__set_val(_dev, UPCAST(_field, field, _set.set_val), VTABLE_PARAM(UPCAST(_field, field, init_val), struct _init_val, init_val));
     return;
     #line 3188 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 3718 "pci-data-capture-dml.c"
+#line 3697 "pci-data-capture-dml.c"
 /* power_on_reset.power_on_reset */
 static void  _DML_TM_power_on_reset__power_on_reset(pci_data_capture_t *_dev, power_on_reset _power_on_reset)
 #line 180 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3723,7 +3702,7 @@ static void  _DML_TM_power_on_reset__power_on_reset(pci_data_capture_t *_dev, po
     return;
     #line 182 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3727 "pci-data-capture-dml.c"
+#line 3706 "pci-data-capture-dml.c"
 /* power_on_reset._default_power_on_reset */
 static void  _DML_TM_power_on_reset___default_power_on_reset(pci_data_capture_t *_dev, power_on_reset _power_on_reset)
 #line 183 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3732,7 +3711,7 @@ static void  _DML_TM_power_on_reset___default_power_on_reset(pci_data_capture_t 
     return;
     #line 185 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3736 "pci-data-capture-dml.c"
+#line 3715 "pci-data-capture-dml.c"
 /* power_on_reset.power_on_reset_subobjs */
 static void  _DML_TM_power_on_reset__power_on_reset_subobjs(pci_data_capture_t *_dev, power_on_reset _power_on_reset)
 #line 186 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3753,9 +3732,9 @@ static void  _DML_TM_power_on_reset__power_on_reset_subobjs(pci_data_capture_t *
             #line 187 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
             {
                 #line 187 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-                power_on_reset v472_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
-                CALL_TRAIT_METHOD0(power_on_reset, power_on_reset, _dev, v472_obj);
-                #line 3759 "pci-data-capture-dml.c"
+                power_on_reset v469_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                CALL_TRAIT_METHOD0(power_on_reset, power_on_reset, _dev, v469_obj);
+                #line 3738 "pci-data-capture-dml.c"
             }
             #line 187 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
         }
@@ -3765,7 +3744,7 @@ static void  _DML_TM_power_on_reset__power_on_reset_subobjs(pci_data_capture_t *
     return;
     #line 189 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3769 "pci-data-capture-dml.c"
+#line 3748 "pci-data-capture-dml.c"
 /* hard_reset.hard_reset */
 static void  _DML_TM_hard_reset__hard_reset(pci_data_capture_t *_dev, _hard_reset __hard_reset)
 #line 221 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3774,7 +3753,7 @@ static void  _DML_TM_hard_reset__hard_reset(pci_data_capture_t *_dev, _hard_rese
     return;
     #line 223 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3778 "pci-data-capture-dml.c"
+#line 3757 "pci-data-capture-dml.c"
 /* hard_reset._default_hard_reset */
 static void  _DML_TM_hard_reset___default_hard_reset(pci_data_capture_t *_dev, _hard_reset __hard_reset)
 #line 224 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3783,7 +3762,7 @@ static void  _DML_TM_hard_reset___default_hard_reset(pci_data_capture_t *_dev, _
     return;
     #line 226 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3787 "pci-data-capture-dml.c"
+#line 3766 "pci-data-capture-dml.c"
 /* hard_reset.hard_reset_subobjs */
 static void  _DML_TM_hard_reset__hard_reset_subobjs(pci_data_capture_t *_dev, _hard_reset __hard_reset)
 #line 227 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3804,9 +3783,9 @@ static void  _DML_TM_hard_reset__hard_reset_subobjs(pci_data_capture_t *_dev, _h
             #line 228 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
             {
                 #line 228 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-                _hard_reset v479_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
-                CALL_TRAIT_METHOD0(_hard_reset, hard_reset, _dev, v479_obj);
-                #line 3810 "pci-data-capture-dml.c"
+                _hard_reset v476_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                CALL_TRAIT_METHOD0(_hard_reset, hard_reset, _dev, v476_obj);
+                #line 3789 "pci-data-capture-dml.c"
             }
             #line 228 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
         }
@@ -3816,7 +3795,7 @@ static void  _DML_TM_hard_reset__hard_reset_subobjs(pci_data_capture_t *_dev, _h
     return;
     #line 230 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3820 "pci-data-capture-dml.c"
+#line 3799 "pci-data-capture-dml.c"
 /* soft_reset.soft_reset */
 static void  _DML_TM_soft_reset__soft_reset(pci_data_capture_t *_dev, _soft_reset __soft_reset)
 #line 280 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3825,7 +3804,7 @@ static void  _DML_TM_soft_reset__soft_reset(pci_data_capture_t *_dev, _soft_rese
     return;
     #line 282 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3829 "pci-data-capture-dml.c"
+#line 3808 "pci-data-capture-dml.c"
 /* soft_reset._default_soft_reset */
 static void  _DML_TM_soft_reset___default_soft_reset(pci_data_capture_t *_dev, _soft_reset __soft_reset)
 #line 283 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3834,7 +3813,7 @@ static void  _DML_TM_soft_reset___default_soft_reset(pci_data_capture_t *_dev, _
     return;
     #line 285 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3838 "pci-data-capture-dml.c"
+#line 3817 "pci-data-capture-dml.c"
 /* soft_reset.soft_reset_subobjs */
 static void  _DML_TM_soft_reset__soft_reset_subobjs(pci_data_capture_t *_dev, _soft_reset __soft_reset)
 #line 286 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
@@ -3855,9 +3834,9 @@ static void  _DML_TM_soft_reset__soft_reset_subobjs(pci_data_capture_t *_dev, _s
             #line 287 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
             {
                 #line 287 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-                _soft_reset v486_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
-                CALL_TRAIT_METHOD0(_soft_reset, soft_reset, _dev, v486_obj);
-                #line 3861 "pci-data-capture-dml.c"
+                _soft_reset v483_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                CALL_TRAIT_METHOD0(_soft_reset, soft_reset, _dev, v483_obj);
+                #line 3840 "pci-data-capture-dml.c"
             }
             #line 287 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
         }
@@ -3867,65 +3846,65 @@ static void  _DML_TM_soft_reset__soft_reset_subobjs(pci_data_capture_t *_dev, _s
     return;
     #line 289 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3871 "pci-data-capture-dml.c"
+#line 3850 "pci-data-capture-dml.c"
 /* no_reset.power_on_reset */
 static void  _DML_TM_no_reset__power_on_reset(pci_data_capture_t *_dev, power_on_reset _power_on_reset)
 #line 1054 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 3876 "pci-data-capture-dml.c"
+    #line 3855 "pci-data-capture-dml.c"
     no_reset _no_reset UNUSED = DOWNCAST(_power_on_reset, no_reset, power_on_reset);
     #line 1054 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return;
     #line 1054 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3882 "pci-data-capture-dml.c"
+#line 3861 "pci-data-capture-dml.c"
 /* no_reset.hard_reset */
 static void  _DML_TM_no_reset__hard_reset(pci_data_capture_t *_dev, _hard_reset __hard_reset)
 #line 1055 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 3887 "pci-data-capture-dml.c"
+    #line 3866 "pci-data-capture-dml.c"
     no_reset _no_reset UNUSED = DOWNCAST(__hard_reset, no_reset, _hard_reset);
     #line 1055 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return;
     #line 1055 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3893 "pci-data-capture-dml.c"
+#line 3872 "pci-data-capture-dml.c"
 /* no_reset.soft_reset */
 static void  _DML_TM_no_reset__soft_reset(pci_data_capture_t *_dev, _soft_reset __soft_reset)
 #line 1056 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 3898 "pci-data-capture-dml.c"
+    #line 3877 "pci-data-capture-dml.c"
     no_reset _no_reset UNUSED = DOWNCAST(__soft_reset, no_reset, _soft_reset);
     #line 1056 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return;
     #line 1056 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 3904 "pci-data-capture-dml.c"
+#line 3883 "pci-data-capture-dml.c"
 /* read.read_field */
 static uint64 _DML_TM_read__read_field(pci_data_capture_t *_dev, read_field _read_field, uint64 enabled_bits, void  *aux)
 #line 3493 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 3909 "pci-data-capture-dml.c"
+    #line 3888 "pci-data-capture-dml.c"
     __read ___read UNUSED = DOWNCAST(_read_field, __read, read_field);
     #line 3494 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return enabled_bits == 0LL ? 0ULL : (CALL_TRAIT_METHOD0(__read, read, _dev, ___read)) & (enabled_bits);
 }
-#line 3914 "pci-data-capture-dml.c"
+#line 3893 "pci-data-capture-dml.c"
 /* read.read */
 static uint64 _DML_TM_read__read(pci_data_capture_t *_dev, __read ___read)
 #line 3497 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
     return CALL_TRAIT_METHOD0(_get, get, _dev, UPCAST(___read, __read, _get));
 }
-#line 3921 "pci-data-capture-dml.c"
+#line 3900 "pci-data-capture-dml.c"
 /* base_address.pci_bar_size_bits */
 static int _DML_TM_base_address__pci_bar_size_bits(pci_data_capture_t *_dev, base_address _base_address)
 #line 898 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 {
-    int v499_bits UNUSED  = (int )VTABLE_PARAM(_base_address, struct _base_address, size_bits);
-    return v499_bits;
+    int v496_bits UNUSED  = (int )VTABLE_PARAM(_base_address, struct _base_address, size_bits);
+    return v496_bits;
 }
-#line 3929 "pci-data-capture-dml.c"
+#line 3908 "pci-data-capture-dml.c"
 /* base_address.pci_mapping_enabled */
 static bool _DML_TM_base_address__pci_mapping_enabled(pci_data_capture_t *_dev, base_address _base_address)
 #line 903 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -3933,7 +3912,7 @@ static bool _DML_TM_base_address__pci_mapping_enabled(pci_data_capture_t *_dev, 
     #line 905 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     return 1;
 }
-#line 3937 "pci-data-capture-dml.c"
+#line 3916 "pci-data-capture-dml.c"
 /* base_address.pci_mapping_object */
 static conf_object_t *_DML_TM_base_address__pci_mapping_object(pci_data_capture_t *_dev, base_address _base_address)
 #line 908 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -3941,7 +3920,7 @@ static conf_object_t *_DML_TM_base_address__pci_mapping_object(pci_data_capture_
     #line 910 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     return &_dev->obj;
 }
-#line 3945 "pci-data-capture-dml.c"
+#line 3924 "pci-data-capture-dml.c"
 /* base_address._get_bank_obj */
 static conf_object_t *_DML_TM_base_address___get_bank_obj(pci_data_capture_t *_dev, base_address _base_address, conf_object_t *obj, int *_out1)
 #line 913 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -3964,32 +3943,32 @@ static conf_object_t *_DML_TM_base_address___get_bank_obj(pci_data_capture_t *_d
             #line 927 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
             {
                 #line 927 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                function_mapped_bank v507_bank UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
-                if ((int64 )VTABLE_PARAM(v507_bank, struct _function_mapped_bank, function) == VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func))
+                function_mapped_bank v504_bank UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                if ((int64 )VTABLE_PARAM(v504_bank, struct _function_mapped_bank, function) == VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func))
                 #line 928 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
                 {
-                    int v509_len UNUSED  = strlen(_DML_TM__qname___qname(_dev, UPCAST(v507_bank, function_mapped_bank, bank.object._qname)));
-                    char v509_name[(int64 )((5ULL + (uint64 )v509_len) + 1ULL)] UNUSED ;
+                    int v506_len UNUSED  = strlen(_DML_TM__qname___qname(_dev, UPCAST(v504_bank, function_mapped_bank, bank.object._qname)));
+                    char v506_name[(int64 )((5ULL + (uint64 )v506_len) + 1ULL)] UNUSED ;
                     #line 930 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                    memset((void *)&v509_name, 0, sizeof(char [(int64 )((5ULL + (uint64 )v509_len) + 1ULL)]));
-                    memcpy(v509_name, "bank.", 5LL);
-                    memcpy(v509_name + 5LL, _DML_TM__qname___qname(_dev, UPCAST(v507_bank, function_mapped_bank, bank.object._qname)), (int64 )((uint64 )v509_len + 1ULL));
-                    conf_object_t *v509_bank_obj UNUSED  = SIM_object_descendant(obj, v509_name);
+                    memset((void *)&v506_name, 0, sizeof(char [(int64 )((5ULL + (uint64 )v506_len) + 1ULL)]));
+                    memcpy(v506_name, "bank.", 5LL);
+                    memcpy(v506_name + 5LL, _DML_TM__qname___qname(_dev, UPCAST(v504_bank, function_mapped_bank, bank.object._qname)), (int64 )((uint64 )v506_len + 1ULL));
+                    conf_object_t *v506_bank_obj UNUSED  = SIM_object_descendant(obj, v506_name);
                     #line 935 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                    DML_ASSERT("/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml", 935, !(v509_bank_obj == NULL));
+                    DML_ASSERT("/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml", 935, !(v506_bank_obj == NULL));
                     #line 937 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                    if (!(SIM_c_get_interface(v509_bank_obj, "io_memory") == NULL) || !(SIM_c_get_interface(v509_bank_obj, "transaction") == NULL))
+                    if (!(SIM_c_get_interface(v506_bank_obj, "io_memory") == NULL) || !(SIM_c_get_interface(v506_bank_obj, "transaction") == NULL))
                     #line 939 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
                     {
                         #line 939 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
                         *_out1 = (int32 )0LL;
                         #line 939 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                        return v509_bank_obj;
-                        #line 3989 "pci-data-capture-dml.c"
+                        return v506_bank_obj;
+                        #line 3968 "pci-data-capture-dml.c"
                     }
                     #line 940 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
                 }
-                #line 3993 "pci-data-capture-dml.c"
+                #line 3972 "pci-data-capture-dml.c"
             }
             #line 927 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
@@ -4000,7 +3979,7 @@ static conf_object_t *_DML_TM_base_address___get_bank_obj(pci_data_capture_t *_d
     #line 943 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     return obj;
 }
-#line 4004 "pci-data-capture-dml.c"
+#line 3983 "pci-data-capture-dml.c"
 /* base_address.pci_mapping_target */
 static conf_object_t *_DML_TM_base_address__pci_mapping_target(pci_data_capture_t *_dev, base_address _base_address)
 #line 946 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -4008,7 +3987,7 @@ static conf_object_t *_DML_TM_base_address__pci_mapping_target(pci_data_capture_
     #line 948 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     return NULL;
 }
-#line 4012 "pci-data-capture-dml.c"
+#line 3991 "pci-data-capture-dml.c"
 /* base_address.pci_mapping_customize */
 static void  _DML_TM_base_address__pci_mapping_customize(pci_data_capture_t *_dev, base_address _base_address, map_info_t *info)
 #line 951 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -4017,28 +3996,28 @@ static void  _DML_TM_base_address__pci_mapping_customize(pci_data_capture_t *_de
     return;
     #line 953 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 }
-#line 4021 "pci-data-capture-dml.c"
+#line 4000 "pci-data-capture-dml.c"
 /* base_address.pci_mapping_base */
 static uint64 _DML_TM_base_address__pci_mapping_base(pci_data_capture_t *_dev, base_address _base_address)
 #line 955 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 {
     return DML_shlu(CALL_TRAIT_METHOD0(base_address, get_base, _dev, _base_address), (uint64 )VTABLE_PARAM(UPCAST(VTABLE_PARAM(_base_address, struct _base_address, _base), field, _lsb), struct __lsb, lsb));
 }
-#line 4028 "pci-data-capture-dml.c"
+#line 4007 "pci-data-capture-dml.c"
 /* base_address.pci_mapping_length */
 static uint64 _DML_TM_base_address__pci_mapping_length(pci_data_capture_t *_dev, base_address _base_address)
 #line 959 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 {
     return (uint64 )(DML_shl(1LL, (int64 )(CALL_TRAIT_METHOD0(base_address, pci_bar_size_bits, _dev, _base_address)), "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml", 960));
 }
-#line 4035 "pci-data-capture-dml.c"
+#line 4014 "pci-data-capture-dml.c"
 /* base_address.get_base */
 static uint64 _DML_TM_base_address__get_base(pci_data_capture_t *_dev, base_address _base_address)
 #line 965 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 {
     return (CALL_TRAIT_METHOD0(_get, get, _dev, UPCAST(VTABLE_PARAM(_base_address, struct _base_address, _base), field, _get))) & ((uint64 )~((int64 )((uint64 )(DML_shl(1LL, (int64 )((uint64 )(CALL_TRAIT_METHOD0(base_address, pci_bar_size_bits, _dev, _base_address)) - (uint64 )VTABLE_PARAM(UPCAST(VTABLE_PARAM(_base_address, struct _base_address, _base), field, _lsb), struct __lsb, lsb)), "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml", 966)) - 1ULL)));
 }
-#line 4042 "pci-data-capture-dml.c"
+#line 4021 "pci-data-capture-dml.c"
 /* base_address.remove_map */
 static void  _DML_TM_base_address__remove_map(pci_data_capture_t *_dev, base_address _base_address)
 #line 969 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -4049,7 +4028,7 @@ static void  _DML_TM_base_address__remove_map(pci_data_capture_t *_dev, base_add
     else
     #line 979 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     {
-        conf_object_t *v524_map_obj UNUSED  = NULL;
+        conf_object_t *v521_map_obj UNUSED  = NULL;
         if (_dev->pci_bus.obj == NULL)
         #line 981 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
@@ -4060,36 +4039,36 @@ static void  _DML_TM_base_address__remove_map(pci_data_capture_t *_dev, base_add
         #line 987 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
             #line 987 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v524_map_obj = CALL_TRAIT_METHOD0(base_address, pci_mapping_object, _dev, _base_address);
+            v521_map_obj = CALL_TRAIT_METHOD0(base_address, pci_mapping_object, _dev, _base_address);
             #line 987 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
-        if (!(v524_map_obj == NULL))
+        if (!(v521_map_obj == NULL))
         #line 988 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
-            addr_space_t v527_type UNUSED  = (addr_space_t )((int64 )strcmp(VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_type), "memory") == 0LL ? 2LL : 1LL);
+            addr_space_t v524_type UNUSED  = (addr_space_t )((int64 )strcmp(VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_type), "memory") == 0LL ? 2LL : 1LL);
             #line 1004 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            ((pci_bus_interface_t const *)_dev->pci_bus.pci_bus.val)->remove_map(_dev->pci_bus.obj, v524_map_obj, v527_type, (int32 )VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func));
-            conf_object_t *v527_bank_obj UNUSED  = NULL;
-            int v527_func UNUSED  = 0LL;
+            ((pci_bus_interface_t const *)_dev->pci_bus.pci_bus.val)->remove_map(_dev->pci_bus.obj, v521_map_obj, v524_type, (int32 )VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func));
+            conf_object_t *v524_bank_obj UNUSED  = NULL;
+            int v524_func UNUSED  = 0LL;
             {
                 #line 1007 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                int v528__ret__out1 UNUSED  = 0LL;
+                int v525__ret__out1 UNUSED  = 0LL;
                 #line 1007 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                v527_bank_obj = _DML_TM_base_address___get_bank_obj(_dev, _base_address, v524_map_obj, &v528__ret__out1);
+                v524_bank_obj = _DML_TM_base_address___get_bank_obj(_dev, _base_address, v521_map_obj, &v525__ret__out1);
                 #line 1007 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-                v527_func = v528__ret__out1;
-                #line 4082 "pci-data-capture-dml.c"
+                v524_func = v525__ret__out1;
+                #line 4061 "pci-data-capture-dml.c"
             }
             #line 1008 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            if (!(v527_bank_obj == v524_map_obj))
-            ((pci_bus_interface_t const *)_dev->pci_bus.pci_bus.val)->remove_map(_dev->pci_bus.obj, v527_bank_obj, v527_type, v527_func);
+            if (!(v524_bank_obj == v521_map_obj))
+            ((pci_bus_interface_t const *)_dev->pci_bus.pci_bus.val)->remove_map(_dev->pci_bus.obj, v524_bank_obj, v524_type, v524_func);
         }
     }
     #line 1013 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     return;
     #line 1013 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 }
-#line 4093 "pci-data-capture-dml.c"
+#line 4072 "pci-data-capture-dml.c"
 /* base_address.add_map */
 static void  _DML_TM_base_address__add_map(pci_data_capture_t *_dev, base_address _base_address)
 #line 1015 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
@@ -4100,11 +4079,11 @@ static void  _DML_TM_base_address__add_map(pci_data_capture_t *_dev, base_addres
     else
     #line 1025 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     {
-        map_info_t v533_info UNUSED ;
+        map_info_t v530_info UNUSED ;
         #line 1026 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        memset((void *)&v533_info, 0, sizeof(map_info_t ));
-        conf_object_t *v533_map_obj UNUSED  = NULL;
-        conf_object_t *v533_map_target UNUSED  = NULL;
+        memset((void *)&v530_info, 0, sizeof(map_info_t ));
+        conf_object_t *v530_map_obj UNUSED  = NULL;
+        conf_object_t *v530_map_target UNUSED  = NULL;
         if (_dev->pci_bus.obj == NULL)
         #line 1029 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
@@ -4115,62 +4094,62 @@ static void  _DML_TM_base_address__add_map(pci_data_capture_t *_dev, base_addres
         #line 1037 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
             #line 1037 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_info.base = CALL_TRAIT_METHOD0(base_address, pci_mapping_base, _dev, _base_address);
+            v530_info.base = CALL_TRAIT_METHOD0(base_address, pci_mapping_base, _dev, _base_address);
             #line 1037 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
         {
             #line 1038 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_info.length = CALL_TRAIT_METHOD0(base_address, pci_mapping_length, _dev, _base_address);
+            v530_info.length = CALL_TRAIT_METHOD0(base_address, pci_mapping_length, _dev, _base_address);
             #line 1038 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
         {
             #line 1039 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_info.function = (int )VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func);
+            v530_info.function = (int )VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func);
             #line 1039 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
         #line 1045 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
             #line 1045 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_map_obj = CALL_TRAIT_METHOD0(base_address, pci_mapping_object, _dev, _base_address);
+            v530_map_obj = CALL_TRAIT_METHOD0(base_address, pci_mapping_object, _dev, _base_address);
             #line 1045 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
         {
             #line 1046 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_map_target = CALL_TRAIT_METHOD0(base_address, pci_mapping_target, _dev, _base_address);
+            v530_map_target = CALL_TRAIT_METHOD0(base_address, pci_mapping_target, _dev, _base_address);
             #line 1046 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
-        CALL_TRAIT_METHOD(base_address, pci_mapping_customize, _dev, _base_address, &v533_info);
+        CALL_TRAIT_METHOD(base_address, pci_mapping_customize, _dev, _base_address, &v530_info);
         #line 1050 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        if (!((int64 )v533_info.function == VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func)))
+        if (!((int64 )v530_info.function == VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_func)))
         SIM_LOG_ERROR(&_dev->obj, _dml_loggroup_PCI_config, "Function number should not be changed when mapping %s", _DML_TM__qname___qname(_dev, UPCAST(_base_address, base_address, _register._conf_attribute.object._qname)));
         #line 1055 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         {
             #line 1055 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            int v541__ret__out1 UNUSED  = 0LL;
+            int v538__ret__out1 UNUSED  = 0LL;
             #line 1055 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_map_obj = _DML_TM_base_address___get_bank_obj(_dev, _base_address, v533_map_obj, &v541__ret__out1);
+            v530_map_obj = _DML_TM_base_address___get_bank_obj(_dev, _base_address, v530_map_obj, &v538__ret__out1);
             #line 1055 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v533_info.function = v541__ret__out1;
-            #line 4155 "pci-data-capture-dml.c"
+            v530_info.function = v538__ret__out1;
+            #line 4134 "pci-data-capture-dml.c"
         }
         #line 1056 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        if (v533_info.base == 0LL)
+        if (v530_info.base == 0LL)
         SIM_LOG_INFO(3LL, &_dev->obj, _dml_loggroup_PCI_config, "Zero %s mapping", _DML_TM__qname___qname(_dev, UPCAST(_base_address, base_address, _register._conf_attribute.object._qname)));
         #line 1059 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        SIM_LOG_INFO(3LL, &_dev->obj, _dml_loggroup_PCI_config, "New %s space mapping for %s (obj %s, target %s, fn %lld): base = %#llx, length = %#llx", VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_type), VTABLE_PARAM(UPCAST(_base_address, base_address, _register._conf_attribute.object.name), struct _name, name), SIM_object_name(v533_map_obj), !(v533_map_target == NULL) ? SIM_object_name(v533_map_target) : "(none)", (uint64 )v533_info.function, v533_info.base, v533_info.length);
+        SIM_LOG_INFO(3LL, &_dev->obj, _dml_loggroup_PCI_config, "New %s space mapping for %s (obj %s, target %s, fn %lld): base = %#llx, length = %#llx", VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_type), VTABLE_PARAM(UPCAST(_base_address, base_address, _register._conf_attribute.object.name), struct _name, name), SIM_object_name(v530_map_obj), !(v530_map_target == NULL) ? SIM_object_name(v530_map_target) : "(none)", (uint64 )v530_info.function, v530_info.base, v530_info.length);
         #line 1070 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        ((pci_bus_interface_t const *)_dev->pci_bus.pci_bus.val)->add_map(_dev->pci_bus.obj, v533_map_obj, (int32 )((int64 )strcmp(VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_type), "memory") == 0LL ? 2LL : 1LL), v533_map_target, v533_info);
+        ((pci_bus_interface_t const *)_dev->pci_bus.pci_bus.val)->add_map(_dev->pci_bus.obj, v530_map_obj, (int32 )((int64 )strcmp(VTABLE_PARAM(UPCAST(_base_address, base_address, map_params), struct _map_params, map_type), "memory") == 0LL ? 2LL : 1LL), v530_map_target, v530_info);
     }
     #line 1073 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     return;
     #line 1073 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 }
-#line 4169 "pci-data-capture-dml.c"
+#line 4148 "pci-data-capture-dml.c"
 /* memory_base_address_generic.update_mapping */
 static void  _DML_TM_memory_base_address_generic__update_mapping(pci_data_capture_t *_dev, base_address _base_address)
 #line 1084 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 {
-    #line 4174 "pci-data-capture-dml.c"
+    #line 4153 "pci-data-capture-dml.c"
     memory_base_address_generic _memory_base_address_generic UNUSED = DOWNCAST(_base_address, memory_base_address_generic, base_address);
     #line 1085 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     CALL_TRAIT_METHOD0(base_address, remove_map, _dev, UPCAST(_memory_base_address_generic, memory_base_address_generic, base_address));
@@ -4180,41 +4159,41 @@ static void  _DML_TM_memory_base_address_generic__update_mapping(pci_data_captur
     return;
     #line 1089 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 }
-#line 4184 "pci-data-capture-dml.c"
+#line 4163 "pci-data-capture-dml.c"
 /* memory_base_address_generic.pci_mapping_base */
 static uint64 _DML_TM_memory_base_address_generic__pci_mapping_base(pci_data_capture_t *_dev, base_address _base_address)
 #line 1093 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 {
-    #line 4189 "pci-data-capture-dml.c"
+    #line 4168 "pci-data-capture-dml.c"
     memory_base_address_generic _memory_base_address_generic UNUSED = DOWNCAST(_base_address, memory_base_address_generic, base_address);
     #line 1093 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
     {
-        uint64 v546_map_base UNUSED  = 0LL;
+        uint64 v543_map_base UNUSED  = 0LL;
         {
             #line 1095 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            v546_map_base = CALL_TRAIT_METHOD0(base_address, get_base, _dev, UPCAST(_memory_base_address_generic, memory_base_address_generic, base_address));
+            v543_map_base = CALL_TRAIT_METHOD0(base_address, get_base, _dev, UPCAST(_memory_base_address_generic, memory_base_address_generic, base_address));
             #line 1095 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         }
         #line 1097 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        uint64 *v548_tmp UNUSED  = &v546_map_base;
+        uint64 *v545_tmp UNUSED  = &v543_map_base;
         #line 1097 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        *v548_tmp = DML_shlu(*v548_tmp, (uint64 )VTABLE_PARAM(UPCAST(VTABLE_PARAM(UPCAST(_memory_base_address_generic, memory_base_address_generic, base_address), struct _base_address, _base), field, _lsb), struct __lsb, lsb));
+        *v545_tmp = DML_shlu(*v545_tmp, (uint64 )VTABLE_PARAM(UPCAST(VTABLE_PARAM(UPCAST(_memory_base_address_generic, memory_base_address_generic, base_address), struct _base_address, _base), field, _lsb), struct __lsb, lsb));
         #line 1099 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
         if ((CALL_TRAIT_METHOD0(_get, get, _dev, UPCAST(VTABLE_PARAM(_memory_base_address_generic, struct _memory_base_address_generic, _type), field, _get))) == 0LL)
         {
             #line 1100 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            uint64 *v549_tmp UNUSED  = &v546_map_base;
+            uint64 *v546_tmp UNUSED  = &v543_map_base;
             #line 1100 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-            *v549_tmp = (*v549_tmp) & (0xffffffffULL);
-            #line 4210 "pci-data-capture-dml.c"
+            *v546_tmp = (*v546_tmp) & (0xffffffffULL);
+            #line 4189 "pci-data-capture-dml.c"
         }
         #line 1101 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
-        return v546_map_base;
-        #line 4214 "pci-data-capture-dml.c"
+        return v543_map_base;
+        #line 4193 "pci-data-capture-dml.c"
     }
     #line 1102 "/home/david/SIMICS/simics-6.0.185/src/devices/dml-lib/1.4/pci/common.dml"
 }
-#line 4218 "pci-data-capture-dml.c"
+#line 4197 "pci-data-capture-dml.c"
 /* post_init._rec_post_init */
 static void  _DML_TM_post_init___rec_post_init(pci_data_capture_t *_dev, post_init _post_init)
 #line 395 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
@@ -4235,9 +4214,9 @@ static void  _DML_TM_post_init___rec_post_init(pci_data_capture_t *_dev, post_in
             #line 396 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
             {
                 #line 396 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
-                post_init v552_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
-                _DML_TM_post_init___rec_post_init(_dev, v552_obj);
-                #line 4241 "pci-data-capture-dml.c"
+                post_init v549_obj UNUSED  = {_list.vtable, {_list.id, _inner_idx}};
+                _DML_TM_post_init___rec_post_init(_dev, v549_obj);
+                #line 4220 "pci-data-capture-dml.c"
             }
             #line 396 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
         }
@@ -4248,90 +4227,90 @@ static void  _DML_TM_post_init___rec_post_init(pci_data_capture_t *_dev, post_in
     return;
     #line 399 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4252 "pci-data-capture-dml.c"
+#line 4231 "pci-data-capture-dml.c"
 /* constant.write_field */
 static void  _DML_TM_constant__write_field(pci_data_capture_t *_dev, write_field _write_field, uint64 val, uint64 enabled_bits, void  *aux)
 #line 643 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 4257 "pci-data-capture-dml.c"
+    #line 4236 "pci-data-capture-dml.c"
     constant _constant UNUSED = DOWNCAST(_write_field, constant, write_field);
     #line 644 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     if (VTABLE_PARAM(UPCAST(_constant, constant, _reg_or_field), struct __reg_or_field, is_register) || !(((val) & (enabled_bits)) == ((CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(_constant, constant, get_val))) & (enabled_bits))))
     #line 646 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     {
         #line 646 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
-        uint64 _calculated_level = _select_log_level(&(_dev->_subsequent_log_ht), _identity_to_key((_constant).id), 2ULL, 1ULL, 2ULL);
+        uint64 _calculated_level = _select_log_level(&(_dev->_subsequent_log_ht), _identity_to_key((_constant).id), 1ULL, 1ULL, 2ULL);
         #line 646 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
         SIM_LOG_SPEC_VIOLATION(_calculated_level, &_dev->obj, _dml_loggroup_Register_Write, "Write to constant %s %s (value written = %#llx, contents = %#llx).", VTABLE_PARAM(UPCAST(_constant, constant, _reg_or_field), struct __reg_or_field, is_register) ? "register" : "field", _DML_TM__qname___qname(_dev, UPCAST(_constant, constant, _qname)), val, CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(_constant, constant, get_val)));
-        #line 4267 "pci-data-capture-dml.c"
+        #line 4246 "pci-data-capture-dml.c"
     }
     #line 652 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return;
     #line 652 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 4273 "pci-data-capture-dml.c"
+#line 4252 "pci-data-capture-dml.c"
 /* _simple_write._simple_write */
 static void  _DML_TM__simple_write___simple_write(pci_data_capture_t *_dev, _simple_write __simple_write, uint64 value, uint64 enabled_bits)
 #line 891 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    uint64 v557_patched UNUSED  = (CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(__simple_write, _simple_write, get_val))) & (~enabled_bits);
-    CALL_TRAIT_METHOD(set_val, set_val, _dev, UPCAST(__simple_write, _simple_write, set_val), (v557_patched) | ((value) & (enabled_bits)));
+    uint64 v554_patched UNUSED  = (CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(__simple_write, _simple_write, get_val))) & (~enabled_bits);
+    CALL_TRAIT_METHOD(set_val, set_val, _dev, UPCAST(__simple_write, _simple_write, set_val), (v554_patched) | ((value) & (enabled_bits)));
     return;
     #line 894 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 4283 "pci-data-capture-dml.c"
+#line 4262 "pci-data-capture-dml.c"
 /* write_1_clears.write_field */
 static void  _DML_TM_write_1_clears__write_field(pci_data_capture_t *_dev, write_field _write_field, uint64 value, uint64 enabled_bits, void  *aux)
 #line 491 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 4288 "pci-data-capture-dml.c"
+    #line 4267 "pci-data-capture-dml.c"
     write_1_clears _write_1_clears UNUSED = DOWNCAST(_write_field, write_1_clears, write_field);
     #line 492 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     _DML_TM__simple_write___simple_write(_dev, UPCAST(_write_1_clears, write_1_clears, _simple_write), ~value, (enabled_bits) & (value));
     return;
     #line 493 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 4295 "pci-data-capture-dml.c"
+#line 4274 "pci-data-capture-dml.c"
 /* miss_pattern_bank.unmapped_read */
 static bool _DML_TM_miss_pattern_bank__unmapped_read(pci_data_capture_t *_dev, bank _bank, uint64 offset, uint64 bits, void  *aux, uint64 *_out0)
 #line 1192 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 4300 "pci-data-capture-dml.c"
+    #line 4279 "pci-data-capture-dml.c"
     miss_pattern_bank _miss_pattern_bank UNUSED = DOWNCAST(_bank, miss_pattern_bank, bank);
     #line 1193 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     *_out0 = (uint64 )VTABLE_PARAM(_miss_pattern_bank, struct _miss_pattern_bank, miss_pattern) * 0x101010101010101ULL;
     #line 1193 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return 0;
 }
-#line 4307 "pci-data-capture-dml.c"
+#line 4286 "pci-data-capture-dml.c"
 /* miss_pattern_bank.unmapped_get */
 static bool _DML_TM_miss_pattern_bank__unmapped_get(pci_data_capture_t *_dev, bank _bank, uint64 offset, uint64 bits, uint64 *_out0)
 #line 1195 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 4312 "pci-data-capture-dml.c"
+    #line 4291 "pci-data-capture-dml.c"
     miss_pattern_bank _miss_pattern_bank UNUSED = DOWNCAST(_bank, miss_pattern_bank, bank);
     #line 1196 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     *_out0 = (uint64 )VTABLE_PARAM(_miss_pattern_bank, struct _miss_pattern_bank, miss_pattern) * 0x101010101010101ULL;
     #line 1196 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return 0;
 }
-#line 4319 "pci-data-capture-dml.c"
+#line 4298 "pci-data-capture-dml.c"
 /* miss_pattern_bank.unmapped_write */
 static bool _DML_TM_miss_pattern_bank__unmapped_write(pci_data_capture_t *_dev, bank _bank, uint64 offset, uint64 value, uint64 bits, void  *aux)
 #line 1199 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 {
-    #line 4324 "pci-data-capture-dml.c"
+    #line 4303 "pci-data-capture-dml.c"
     miss_pattern_bank _miss_pattern_bank UNUSED = DOWNCAST(_bank, miss_pattern_bank, bank);
     #line 1200 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
     return 0;
     #line 1200 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
-#line 4330 "pci-data-capture-dml.c"
+#line 4309 "pci-data-capture-dml.c"
 /* attribute.set_attribute */
 static set_error_t _DML_TM_attribute__set_attribute(pci_data_capture_t *_dev, _conf_attribute __conf_attribute, attr_value_t value)
 #line 815 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 4335 "pci-data-capture-dml.c"
+    #line 4314 "pci-data-capture-dml.c"
     attribute _attribute UNUSED = DOWNCAST(__conf_attribute, attribute, _conf_attribute);
     #line 817 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (CALL_TRAIT_METHOD(attribute, set, _dev, _attribute, value))
@@ -4344,32 +4323,32 @@ static set_error_t _DML_TM_attribute__set_attribute(pci_data_capture_t *_dev, _c
     return (int32 )3LL;
     #line 822 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4348 "pci-data-capture-dml.c"
+#line 4327 "pci-data-capture-dml.c"
 /* attribute.get_attribute */
 static attr_value_t _DML_TM_attribute__get_attribute(pci_data_capture_t *_dev, _conf_attribute __conf_attribute)
 #line 824 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 4353 "pci-data-capture-dml.c"
+    #line 4332 "pci-data-capture-dml.c"
     attribute _attribute UNUSED = DOWNCAST(__conf_attribute, attribute, _conf_attribute);
     #line 825 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return CALL_TRAIT_METHOD0(attribute, get, _dev, _attribute);
 }
-#line 4358 "pci-data-capture-dml.c"
+#line 4337 "pci-data-capture-dml.c"
 /* read_only_attr.set */
 static bool _DML_TM_read_only_attr__set(pci_data_capture_t *_dev, attribute _attribute, attr_value_t val)
 #line 1201 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 4363 "pci-data-capture-dml.c"
+    #line 4342 "pci-data-capture-dml.c"
     read_only_attr _read_only_attr UNUSED = DOWNCAST(_attribute, read_only_attr, pseudo_attr.attribute);
     #line 1202 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     DML_ASSERT("/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml", 1202, 0);
 }
-#line 4368 "pci-data-capture-dml.c"
+#line 4347 "pci-data-capture-dml.c"
 /* uint64_attr.init */
 static void  _DML_TM_uint64_attr__init(pci_data_capture_t *_dev, init _init)
 #line 1141 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 4373 "pci-data-capture-dml.c"
+    #line 4352 "pci-data-capture-dml.c"
     uint64_attr _uint64_attr UNUSED = DOWNCAST(_init, uint64_attr, init);
     #line 1142 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     {
@@ -4380,22 +4359,22 @@ static void  _DML_TM_uint64_attr__init(pci_data_capture_t *_dev, init _init)
     return;
     #line 1143 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 }
-#line 4384 "pci-data-capture-dml.c"
+#line 4363 "pci-data-capture-dml.c"
 /* uint64_attr.get */
 static attr_value_t _DML_TM_uint64_attr__get(pci_data_capture_t *_dev, attribute _attribute)
 #line 1144 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 4389 "pci-data-capture-dml.c"
+    #line 4368 "pci-data-capture-dml.c"
     uint64_attr _uint64_attr UNUSED = DOWNCAST(_attribute, uint64_attr, attribute);
     #line 1145 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     return SIM_make_attr_uint64(*(VTABLE_SESSION(_dev, _uint64_attr, struct _uint64_attr, val, uint64 *)));
 }
-#line 4394 "pci-data-capture-dml.c"
+#line 4373 "pci-data-capture-dml.c"
 /* uint64_attr.set */
 static bool _DML_TM_uint64_attr__set(pci_data_capture_t *_dev, attribute _attribute, attr_value_t val)
 #line 1147 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
 {
-    #line 4399 "pci-data-capture-dml.c"
+    #line 4378 "pci-data-capture-dml.c"
     uint64_attr _uint64_attr UNUSED = DOWNCAST(_attribute, uint64_attr, attribute);
     #line 1148 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
     if (!SIM_attr_is_uint64(val))
@@ -4412,6 +4391,27 @@ static bool _DML_TM_uint64_attr__set(pci_data_capture_t *_dev, attribute _attrib
     }
     return 0;
     #line 1154 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/dml-builtins.dml"
+}
+#line 4396 "pci-data-capture-dml.c"
+/* read_only.write_field */
+static void  _DML_TM_read_only__write_field(pci_data_capture_t *_dev, write_field _write_field, uint64 val, uint64 enabled_bits, void  *aux)
+#line 435 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
+{
+    #line 4401 "pci-data-capture-dml.c"
+    read_only _read_only UNUSED = DOWNCAST(_write_field, read_only, write_field);
+    #line 436 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
+    if (VTABLE_PARAM(UPCAST(_read_only, read_only, _reg_or_field), struct __reg_or_field, is_register) || !(((val) & (enabled_bits)) == ((CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(_read_only, read_only, get_val))) & (enabled_bits))))
+    #line 438 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
+    {
+        #line 438 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
+        uint64 _calculated_level = _select_log_level(&(_dev->_subsequent_log_ht), _identity_to_key((_read_only).id), 2ULL, 1ULL, 2ULL);
+        #line 438 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
+        SIM_LOG_SPEC_VIOLATION(_calculated_level, &_dev->obj, _dml_loggroup_Register_Write, "Write to read-only %s %s (value written = %#llx, contents = %#llx).", VTABLE_PARAM(UPCAST(_read_only, read_only, _reg_or_field), struct __reg_or_field, is_register) ? "register" : "field", _DML_TM__qname___qname(_dev, UPCAST(_read_only, read_only, _qname)), val, CALL_TRAIT_METHOD0(get_val, get_val, _dev, UPCAST(_read_only, read_only, get_val)));
+        #line 4411 "pci-data-capture-dml.c"
+    }
+    #line 444 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
+    return;
+    #line 444 "/home/david/SIMICS/simics-6.0.185/linux64/bin/dml/1.4/utility.dml"
 }
 #line 4417 "pci-data-capture-dml.c"
 /* _init_val_soft_reset._default_soft_reset */
@@ -5620,7 +5620,7 @@ static void  _DML_M_regs__cmd__write(pci_data_capture_t *_dev, uint64 value)
                 int v804_i UNUSED  = (int32 )0LL;
                 #line 125 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/pci-data-capture.dml"
                 for (; (int64 )v804_i < 0x1d588LL; (int64 )(v804_i)++)
-                _DML_TM_register__set_val(_dev, UPCAST(UPCAST(({uint32 __indices[] = {(int64 )v804_i}; ((__implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only) {(&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only), ((_identity_t) {.id = 88, .encoded_index = __indices[0]})});}), __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, _reg_write_as_field._register), _register, set._set.set_val), (uint64 )v802_buf[(int64 )v804_i]);
+                _DML_TM_register__set_val(_dev, UPCAST(UPCAST(({uint32 __indices[] = {(int64 )v804_i}; ((__implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write) {(&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write), ((_identity_t) {.id = 88, .encoded_index = __indices[0]})});}), __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write, _reg_write_as_field._register), _register, set._set.set_val), (uint64 )v802_buf[(int64 )v804_i]);
                 #line 125 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/pci-data-capture.dml"
             }
             #line 128 "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/pci-data-capture.dml"
@@ -9820,64 +9820,6 @@ _tinit_pci_config_type_0(struct _pci_config_type_0 *_ret, uint32 _pci_config_typ
     _tinit__pci_config_type_0(&_ret->_pci_config_type_0);
     _tinit_pci_config_generic(&_ret->pci_config_generic, _pci_config_type_0__after_read_callbacks, _pci_config_type_0__after_write_callbacks, _pci_config_type_0__before_read_callbacks, _pci_config_type_0__before_write_callbacks, _pci_config_type_0__cached_bank_obj, _pci_config_type_0__connections, _pci_config_type_0__each_register, _pci_config_type_0__get_register, _pci_config_type_0__le_byte_order, _pci_config_type_0__memo_outs__reginfo_table, _pci_config_type_0__memo_outs__sorted_regs, _pci_config_type_0__rbar_control, _pci_config_type_0_be_bitorder, _pci_config_type_0_function, _pci_config_type_0_get, _pci_config_type_0_io_memory_access, _pci_config_type_0_miss_pattern, _pci_config_type_0_name, _pci_config_type_0_overlapping, _pci_config_type_0_partial, _pci_config_type_0_read, _pci_config_type_0_set, _pci_config_type_0_shown_desc, _pci_config_type_0_transaction_access, _pci_config_type_0_use_io_memory, _pci_config_type_0_write);
 }
-static void __attribute__((optimize("O0")))
-_tinit_read_only(struct _read_only *_ret, uint64 (*_read_only__default_get)(pci_data_capture_t *arg0, get_val arg1), uint64 (*_read_only_get_val)(pci_data_capture_t *arg0, get_val arg1), bool *_read_only_is_register)
-{
-    _tinit__qname(&_ret->_qname);
-    _tinit__reg_or_field(&_ret->_reg_or_field, _read_only_is_register);
-    _tinit_get_val(&_ret->get_val, _read_only__default_get, _read_only_get_val);
-    _tinit_write_field(&_ret->write_field, _DML_TM_read_only__write_field);
-}
-static void  
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___init_val_hard_reset__init_val___default_init(pci_data_capture_t *_dev, init_val _init_val)
-{
-    _init_val.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_init_val, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, _init_val_hard_reset.init_val).trait)->_reg_write_as_field._register.init_val;
-    _DML_TM_register___default_init(_dev, _init_val);
-}
-static void  
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___init_val_soft_reset__init_val___default_init(pci_data_capture_t *_dev, init_val _init_val)
-{
-    _init_val.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_init_val, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, _init_val_soft_reset.init_val).trait)->_reg_write_as_field._register.init_val;
-    _DML_TM_register___default_init(_dev, _init_val);
-}
-static void  
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___init_val_soft_reset__init_val__init__init(pci_data_capture_t *_dev, init _init)
-{
-    _init.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_init, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, _init_val_soft_reset.init_val.init).trait)->_init_val_hard_reset.init_val.init;
-    ((struct _init *) _init.trait)->init(_dev, _init);
-}
-static void  
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___reg_write_as_field__register__init_val__init__init(pci_data_capture_t *_dev, init _init)
-{
-    _init.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_init, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, _reg_write_as_field._register.init_val.init).trait)->_init_val_hard_reset.init_val.init;
-    ((struct _init *) _init.trait)->init(_dev, _init);
-}
-static void  
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___reg_write_as_field__write_field__write_field(pci_data_capture_t *_dev, write_field _write_field, uint64 val, uint64 enabled_bits, void  *aux)
-{
-    _write_field.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_write_field, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, _reg_write_as_field.write_field).trait)->read_only.write_field;
-    _DML_TM_read_only__write_field(_dev, _write_field, val, enabled_bits, aux);
-}
-static uint64 
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__read_only__get_val___default_get(pci_data_capture_t *_dev, get_val _get_val)
-{
-    _get_val.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_get_val, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, read_only.get_val).trait)->_reg_write_as_field._register.get._get.get_val;
-    return _DML_TM_register___default_get(_dev, _get_val);
-}
-static uint64 
-__adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__read_only__get_val__get_val(pci_data_capture_t *_dev, get_val _get_val)
-{
-    _get_val.trait = &((struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *) DOWNCAST(_get_val, __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, read_only.get_val).trait)->_reg_write_as_field._register.get._get.get_val;
-    return _DML_TM_register__get_val(_dev, _get_val);
-}
-static void __attribute__((optimize("O0")))
-_tinit___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only(struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only *_ret, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__attr_allow_cutoff, char const **___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__attr_name, char const **___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__attr_type, char const **___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__documentation, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_hard_reset, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_init, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_soft_reset, attr_attr_t *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__flags, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__get_fields, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__is_read_only, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__le_byte_order, uint32 *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__object_relative_dims, conf_class_t ***___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__parent_obj_class, _dml_attr_parent_obj_proxy_info_t *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__parent_obj_proxy_info, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__read_fields, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__set_fields, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__should_be_registered, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__write_fields, uint8 *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_bitsize, _each_in_param_t ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_fields, uint64 (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_get)(pci_data_capture_t *arg0, _get arg1), void  (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_hard_reset)(pci_data_capture_t *arg0, _hard_reset arg1), void  (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init)(pci_data_capture_t *arg0, init arg1), uint64 *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init_val, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_is_register, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_mapped, char const **___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_name, uint64 *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_offset, uint64 (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_read_register)(pci_data_capture_t *arg0, read_register arg1, uint64 arg2, void  *arg3), uint64 (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_read_unmapped_bits)(pci_data_capture_t *arg0, _register arg1, uint64 arg2, void  *arg3), bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_readable, void  (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_set)(pci_data_capture_t *arg0, _set arg1, uint64 arg2), char const **___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_shown_desc, void  (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_soft_reset)(pci_data_capture_t *arg0, _soft_reset arg1), uint32 ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_val, bool *___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_writable, void  (*___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_write_unmapped_bits)(pci_data_capture_t *arg0, _register arg1, uint64 arg2, uint64 arg3, void  *arg4))
-{
-    _tinit__init_val_hard_reset(&_ret->_init_val_hard_reset, __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___init_val_hard_reset__init_val___default_init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_hard_reset, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_hard_reset, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init_val);
-    _tinit__init_val_soft_reset(&_ret->_init_val_soft_reset, __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___init_val_soft_reset__init_val___default_init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_soft_reset, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init == NULL ? NULL : __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___init_val_soft_reset__init_val__init__init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init_val, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_soft_reset);
-    _tinit__reg_write_as_field(&_ret->_reg_write_as_field, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__attr_allow_cutoff, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__attr_name, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__attr_type, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__documentation, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__each_init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__flags, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__get_fields, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__is_read_only, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__le_byte_order, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__object_relative_dims, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__parent_obj_class, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__parent_obj_proxy_info, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__read_fields, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__set_fields, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__should_be_registered, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__write_fields, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_bitsize, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_fields, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_get, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init == NULL ? NULL : __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___reg_write_as_field__register__init_val__init__init, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_init_val, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_mapped, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_name, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_offset, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_read_register, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_read_unmapped_bits, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_readable, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_set, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_shown_desc, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_val, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_writable, __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only___reg_write_as_field__write_field__write_field, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_write_unmapped_bits);
-    _tinit_read_only(&_ret->read_only, __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__read_only__get_val___default_get, __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only__read_only__get_val__get_val, ___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_is_register);
-}
 static void  
 __adj___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write___init_val_hard_reset__init_val___default_init(pci_data_capture_t *_dev, init_val _init_val)
 {
@@ -10312,7 +10254,7 @@ static void __attribute__((optimize("O0"))) _initialize_traits4(void)
             (*_param_mapped)[_i0] = !DML_eq((int64 )(24ULL + (uint64 )(_i0)), 0xffffffffffffffffULL);
             (*_param_offset)[_i0] = 24ULL + (uint64 )(_i0);
         }
-        _tinit___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only(&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only, ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "buffer"; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "i"; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "register regs.buffer[i]"; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static attr_attr_t _tmp __attribute__((aligned(2))); _tmp = (int32 )0x10001LL; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), ({static uint32 _tmp __attribute__((aligned(2))); _tmp = (uint32 )1ULL; &_tmp; }), ({static conf_class_t **_tmp __attribute__((aligned(2))); _tmp = &_port_class_regs; &_tmp; }), ({static _dml_attr_parent_obj_proxy_info_t _tmp __attribute__((aligned(2))); _tmp = (_dml_attr_parent_obj_proxy_info_t) { .valid = true,.is_bank = true, .is_array = false, .portname = "regs" }; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static uint8 _tmp __attribute__((aligned(2))); _tmp = (uint8 )8ULL; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, NULL, NULL, NULL, ({static uint64 _tmp __attribute__((aligned(2))); _tmp = 0ULL; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), (void *)((uintptr_t)_param_mapped + 1), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "buffer"; &_tmp; }), (void *)((uintptr_t)_param_offset + 1), NULL, NULL, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL, ({static char const *_tmp __attribute__((aligned(2))); _tmp = NULL; &_tmp; }), NULL, offsetof(pci_data_capture_t, regs.buffer.val[0ULL]), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL);
+        _tinit___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write(&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write, ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "buffer"; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "i"; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "register regs.buffer[i]"; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static attr_attr_t _tmp __attribute__((aligned(2))); _tmp = (int32 )0x10001LL; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), ({static uint32 _tmp __attribute__((aligned(2))); _tmp = (uint32 )1ULL; &_tmp; }), ({static conf_class_t **_tmp __attribute__((aligned(2))); _tmp = &_port_class_regs; &_tmp; }), ({static _dml_attr_parent_obj_proxy_info_t _tmp __attribute__((aligned(2))); _tmp = (_dml_attr_parent_obj_proxy_info_t) { .valid = true,.is_bank = true, .is_array = false, .portname = "regs" }; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, ({static uint8 _tmp __attribute__((aligned(2))); _tmp = (uint8 )8ULL; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0xffffffff, .array_size = 1}, NULL, NULL, NULL, ({static uint64 _tmp __attribute__((aligned(2))); _tmp = 0ULL; &_tmp; }), (void *)((uintptr_t)_param_mapped + 1), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "buffer"; &_tmp; }), (void *)((uintptr_t)_param_offset + 1), NULL, NULL, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL, ({static char const *_tmp __attribute__((aligned(2))); _tmp = NULL; &_tmp; }), NULL, offsetof(pci_data_capture_t, regs.buffer.val[0ULL]), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL, NULL);
     }
     _tinit___implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write(&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write, ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "cmd"; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "i"; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "register regs.cmd"; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, ({static attr_attr_t _tmp __attribute__((aligned(2))); _tmp = (int32 )0x10001LL; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, ({static bool _tmp __attribute__((aligned(2))); _tmp = 0; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), ({static uint32 _tmp __attribute__((aligned(2))); _tmp = (uint32 )0ULL; &_tmp; }), ({static conf_class_t **_tmp __attribute__((aligned(2))); _tmp = &_port_class_regs; &_tmp; }), ({static _dml_attr_parent_obj_proxy_info_t _tmp __attribute__((aligned(2))); _tmp = (_dml_attr_parent_obj_proxy_info_t) { .valid = true,.is_bank = true, .is_array = false, .portname = "regs" }; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, ({static uint8 _tmp __attribute__((aligned(2))); _tmp = (uint8 )32ULL; &_tmp; }), (_each_in_param_t){.base_idx = 0, .num = 0, .array_idx = 0, .array_size = 1}, NULL, NULL, NULL, ({static uint64 _tmp __attribute__((aligned(2))); _tmp = 0ULL; &_tmp; }), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), ({static char const *_tmp __attribute__((aligned(2))); _tmp = "cmd"; &_tmp; }), ({static uint64 _tmp __attribute__((aligned(2))); _tmp = 20ULL; &_tmp; }), NULL, NULL, ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), NULL, ({static char const *_tmp __attribute__((aligned(2))); _tmp = NULL; &_tmp; }), NULL, offsetof(pci_data_capture_t, regs.cmd.val), ({static bool _tmp __attribute__((aligned(2))); _tmp = 1; &_tmp; }), regs__cmd__write__trampoline_from_write, NULL);
     _tinit_implement(&_tr_regs_instrumentation_order__implement, ({static char const *_tmp __attribute__((aligned(2))); _tmp = "instrumentation_order"; &_tmp; }));
@@ -10372,7 +10314,7 @@ static const _vtable_list_t _each__init[68] UNUSED = {
     {&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._init_val_hard_reset.init_val.init, 1, 82},
     {&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._init_val_hard_reset.init_val.init, 1, 83},
     {&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._init_val_hard_reset.init_val.init, 1, 87},
-    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only._init_val_hard_reset.init_val.init, 120200, 88},
+    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_hard_reset.init_val.init, 120200, 88},
     {&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_hard_reset.init_val.init, 1, 89},
     {&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_hard_reset.init_val.init, 1, 94},
     {&_tr_pci_config_base_address_0_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write._init_val_hard_reset.init_val.init, 1, 17},
@@ -10456,7 +10398,7 @@ static const _vtable_list_t _each__soft_reset[67] UNUSED = {
     {&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._init_val_soft_reset._soft_reset, 1, 82},
     {&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._init_val_soft_reset._soft_reset, 1, 83},
     {&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._init_val_soft_reset._soft_reset, 1, 87},
-    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only._init_val_soft_reset._soft_reset, 120200, 88},
+    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_soft_reset._soft_reset, 120200, 88},
     {&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_soft_reset._soft_reset, 1, 89},
     {&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_soft_reset._soft_reset, 1, 94},
     {&_tr_pci_config_base_address_0_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write._init_val_soft_reset._soft_reset, 1, 17},
@@ -10536,7 +10478,7 @@ static const _vtable_list_t _each__hard_reset[67] UNUSED = {
     {&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._init_val_hard_reset._hard_reset, 1, 82},
     {&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._init_val_hard_reset._hard_reset, 1, 83},
     {&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._init_val_hard_reset._hard_reset, 1, 87},
-    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only._init_val_hard_reset._hard_reset, 120200, 88},
+    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_hard_reset._hard_reset, 120200, 88},
     {&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_hard_reset._hard_reset, 1, 89},
     {&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._init_val_hard_reset._hard_reset, 1, 94},
     {&_tr_pci_config_base_address_0_base____implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write._init_val_hard_reset._hard_reset, 1, 17},
@@ -10617,7 +10559,7 @@ static const _vtable_list_t _each__register[31] UNUSED = {
     {&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register, 1, 82},
     {&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register, 1, 83},
     {&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._register, 1, 87},
-    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only._reg_write_as_field._register, 120200, 88},
+    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register, 120200, 88},
     {&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register, 1, 89},
     {&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register, 1, 94}
 };
@@ -10769,7 +10711,7 @@ static const _vtable_list_t _each___conf_attribute[37] UNUSED = {
     {&_tr_pci_config_subsystem_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute, 1, 82},
     {&_tr_pci_config_vendor_id____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only_custom_write._reg_write_as_field._register._conf_attribute, 1, 83},
     {&_tr_regs_buf_size____implicit__init_val_hard_reset___init_val_soft_reset__register._register._conf_attribute, 1, 87},
-    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only._reg_write_as_field._register._conf_attribute, 120200, 88},
+    {&_tr_regs_buffer____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute, 120200, 88},
     {&_tr_regs_cmd____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute, 1, 89},
     {&_tr_regs_src____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write._reg_write_as_field._register._conf_attribute, 1, 94},
     {&_tr_target_mem_space__connect._conf_attribute, 1, 97}
@@ -10796,8 +10738,6 @@ static const _vtable_list_t *const _each__read_register UNUSED = NULL;
 static const _vtable_list_t *const _each__write_register UNUSED = NULL;
 static const _vtable_list_t *const _each__init_val UNUSED = NULL;
 static const _vtable_list_t *const _each__write_field UNUSED = NULL;
-static const _vtable_list_t *const _each___reg_or_field UNUSED = NULL;
-static const _vtable_list_t *const _each__read_only UNUSED = NULL;
 static const _vtable_list_t *const _each__write UNUSED = NULL;
 static const _vtable_list_t *const _each__connect UNUSED = NULL;
 static const _vtable_list_t *const _each___lsb UNUSED = NULL;
@@ -10815,6 +10755,7 @@ static const _vtable_list_t *const _each__read_only_custom_write UNUSED = NULL;
 static const _vtable_list_t *const _each___pci_config_type_0 UNUSED = NULL;
 static const _vtable_list_t *const _each__read_zero UNUSED = NULL;
 static const _vtable_list_t *const _each__unmapped UNUSED = NULL;
+static const _vtable_list_t *const _each___reg_or_field UNUSED = NULL;
 static const _vtable_list_t *const _each__constant UNUSED = NULL;
 static const _vtable_list_t *const _each___simple_write UNUSED = NULL;
 static const _vtable_list_t *const _each__write_1_clears UNUSED = NULL;
@@ -10841,6 +10782,7 @@ static const _vtable_list_t *const _each__providing_pci_bus_connect UNUSED = NUL
 static const _vtable_list_t *const _each__pci_common UNUSED = NULL;
 static const _vtable_list_t *const _each__pci_device UNUSED = NULL;
 static const _vtable_list_t *const _each__device UNUSED = NULL;
+static const _vtable_list_t *const _each__read_only UNUSED = NULL;
 static const _vtable_list_t *const _each___init_val_soft_reset UNUSED = NULL;
 static const _vtable_list_t *const _each__port UNUSED = NULL;
 static const _vtable_list_t *const _each__sreset UNUSED = NULL;
@@ -11161,7 +11103,6 @@ static const _vtable_list_t *const _each____implicit__init_val_hard_reset___init
 static const _vtable_list_t *const _each____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write UNUSED = NULL;
 static const _vtable_list_t *const _each____implicit__init_val_hard_reset___init_val_soft_reset__base_address UNUSED = NULL;
 static const _vtable_list_t *const _each____implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__write_1_clears UNUSED = NULL;
-static const _vtable_list_t *const _each____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only UNUSED = NULL;
 static const _vtable_list_t *const _each____implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__write UNUSED = NULL;
 static void _initialize_typeseq_after_on_hook_hts(void)
 {

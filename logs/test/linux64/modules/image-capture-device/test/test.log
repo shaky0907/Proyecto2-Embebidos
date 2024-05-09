@@ -1,0 +1,10 @@
+Entering directory `/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/test'
+=BEGIN s-ic-device
+Intel Simics 6 (build 6275 linux64) © 2024 Intel Corporation
+
+Testing Attributes
+Testing Registers
+Testing Image Load
+image:  homero.bmp
+=END s-ic-device 9.7 s
+Leaving directory `/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/image-capture-device/test'

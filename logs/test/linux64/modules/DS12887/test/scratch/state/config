@@ -1,0 +1,22 @@
+#SIMICS-CONF-1
+OBJECT ds.bank.partially_persistent_registers TYPE DS12887.partially_persistent_registers {
+	b: 6
+}
+OBJECT ds.bank.registers TYPE DS12887.registers {
+	a: 32
+	d: 0
+	date_of_the_month: 28
+	day_of_the_week: 4
+	hours: 23
+	hours_alarm: 20
+	minutes: 59
+	minutes_alarm: 9
+	month: 2
+	nvram: (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+	seconds: 57
+	seconds_alarm: 38
+	year: 96
+}
+OBJECT sim TYPE sim {
+	checkpoint_path: ()
+}

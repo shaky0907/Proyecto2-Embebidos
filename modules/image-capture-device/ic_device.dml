@@ -25,7 +25,7 @@ connect target_mem_space {
         "The memory space on which the DMA engine operates. Data will be "
         + "read from and copied to the memory associated with this memory "
         + "space.";
-    param configuration = "required";
+    param configuration = "optional";
     interface memory_space;
 }
 

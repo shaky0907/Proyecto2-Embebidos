@@ -1,0 +1,12 @@
+#SIMICS-CONF-1
+OBJECT checkpoint_info TYPE checkpoint_info {
+	comment: NIL
+	prioritized_packages: ()
+	kind: "persistent-state"
+	machines: ()
+	date: "Thu May  9 00:50:09 2024"
+	host_name: "david-System-Product-Name"
+	user: "david"
+	host_type: "linux64"
+	packages: (("QSP-ISIM","6.0.pre8"),("Docea-Base","6.0.38"),("Viewer","6.0.17"),("Crypto-Engine","6.0.7"),("Simics-Base","6.0.185"),("QSP-CPU","6.0.21"),("Training","6.0.pre37"),("GDB","6.0.4"),("QSP-x86","6.0.73"),("RISC-V-CPU","6.0.60"),("QSP-Clear-Linux","6.0.15"),("RISC-V-Simple","6.0.4"),("OSS-Sources","6.0.53"))
+}

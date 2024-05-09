@@ -137,7 +137,7 @@ bank regs is function_mapped_bank {
     
     //for communicating initial 8 bytes of the file after command=1 and input attr value is populated
     register buffer[i < BUFFER_SIZE] size 1 @ 0x18 + i {
-        is read_only;
+        is write;
         param init_val = 0x0;
     }
 }

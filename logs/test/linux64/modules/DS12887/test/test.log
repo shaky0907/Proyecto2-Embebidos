@@ -1,0 +1,38 @@
+Entering directory `/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/DS12887/test'
+=BEGIN s-calendar
+Intel Simics 6 (build 6275 linux64) © 2024 Intel Corporation
+
+Testing calendar
+Testing alarm
+Testing persistent state
+=END s-calendar 0.3 s
+=BEGIN s-periodic
+Intel Simics 6 (build 6275 linux64) © 2024 Intel Corporation
+
+Testing periodic interrupts
+Testing rs=3 (8192 Hz)
+Testing rs=4 (4096 Hz)
+Testing rs=5 (2048 Hz)
+Testing rs=6 (1024 Hz)
+Testing rs=7 (512 Hz)
+Testing rs=8 (256 Hz)
+Testing rs=9 (128 Hz)
+Testing rs=10 (64 Hz)
+Testing rs=11 (32 Hz)
+Testing rs=12 (16 Hz)
+Testing rs=13 (8 Hz)
+Testing rs=14 (4 Hz)
+Testing rs=15 (2 Hz)
+=END s-periodic 0.2 s
+=BEGIN s-ram
+Intel Simics 6 (build 6275 linux64) © 2024 Intel Corporation
+
+Testing ram
+Testing ram
+Testing ram
+=END s-ram 0.2 s
+=BEGIN s-rtc-nvram
+Intel Simics 6 (build 6275 linux64) © 2024 Intel Corporation
+
+=END s-rtc-nvram 0.2 s
+Leaving directory `/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/DS12887/test'

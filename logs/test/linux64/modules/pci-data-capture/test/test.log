@@ -1,0 +1,21 @@
+Entering directory `/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/test'
+=BEGIN s-sample-pci
+Intel Simics 6 (build 6275 linux64) © 2024 Intel Corporation
+
+Expected 256 = 0x100
+Got      0 = 0x0
+*** Python script 's-sample-pci.py' failed: Python error in PyEval_Evalcode():
+Traceback (most recent call last):
+  File "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/test/s-sample-pci.py", line 55, in <module>
+    test_buffer()
+  File "/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/test/s-sample-pci.py", line 48, in test_buffer
+    stest.expect_equal(regs.buffer[i].read(),0x5+i)
+  File "/home/david/SIMICS/simics-6.0.185/linux64/lib/python-py3/stest.py", line 340, in expect_equal
+    fail(msg)
+  File "/home/david/SIMICS/simics-6.0.185/linux64/lib/python-py3/stest.py", line 99, in fail
+    raise TestFailure(msg)
+stest.TestFailure: expectation failed
+*** Unexpected error message, quitting. Clear sim->stop_on_error to change this behaviour.
+*** failed (exit-status 2) ***
+=END s-sample-pci 9.9 s
+Leaving directory `/home/david/Documents/Empotrados/Proyecto2-Embebidos/modules/pci-data-capture/test'
