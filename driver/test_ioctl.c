@@ -11,6 +11,10 @@
 #define WR_VALUE _IOW('a','a',int32_t *)
 #define RD_VALUE _IOR('b','b',int32_t *)
 
+
+
+
+
 int main()
 {
     int fd;
@@ -46,13 +50,6 @@ int main()
         buffer_i += 0x4;
     }
 
-    
-    
-
-
-    //int32_t value = 0xCAFECAFE;
-    //ioctl(fd, WR_VALUE, (int32_t *) &value);
-    //printf("Write test_register succesfully done\n");
 
     printf("*********************************\n");
     printf(" >>> Closing character device\n");
